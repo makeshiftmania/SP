@@ -1,0 +1,380 @@
+[TREE] tree-menu.js (COLLAPSED DEFAULT) loaded tree-menu.js:2:9
+[TREE] Debug functions and API exposed tree-menu.js:714:11
+[SEARCH] ppdoc-search-handler.js loaded ppdoc-search-handler.js:2:9
+[PENCIL] ppdoc-pencil-handler.js loaded pencil-handler.js:2:9
+[DATE-PICKER] Script loaded date-picker.js:1:9
+[DATE-PICKER] Initializing date picker component date-picker.js:7:13
+[ADDRESS-EDITOR] Script loaded address-editor.js:1:9
+[ADDRESS-EDITOR] Initializing address editor component address-editor.js:7:13
+No custom-dropdown elements found on the page dropdown-handler.js:7:17
+[DATE-PICKER] initDatePickers called date-picker.js:16:17
+[DATE-PICKER] Found 0 date picker fields date-picker.js:19:17
+[MONETARY] Found 0 monetary fields to initialize monetary-field-handler.js:5:11
+[DATE-FORMAT] Found 0 date format fields to initialize date-field-handler.js:5:11
+[ADDRESS-EDITOR] initAddressEditor called address-editor.js:26:17
+[ADDRESS-EDITOR] Setting up event delegation for address editor address-editor.js:33:17
+[ADDRESS-EDITOR] Event delegation setup completed address-editor.js:41:17
+[TREE] Fragments ready, building flat tree... tree-menu.js:680:13
+
+[TREE DEBUG] Building tree... tree-menu.js:552:13
+[TREE] No scenario data - building default tree tree-menu.js:568:15
+[TREE] Building default tree (no scenario data) tree-menu.js:486:13
+[TREE] Default tree built successfully tree-menu.js:548:13
+[SEARCH] Initializing search functionality... ppdoc-search-handler.js:492:13
+[SEARCH] Search functionality initialized ppdoc-search-handler.js:504:13
+[PENCIL] Initializing pencil button functionality... pencil-handler.js:434:13
+[PENCIL] Pencil button functionality initialized pencil-handler.js:446:13
+[MONETARY] Fragments ready, re-initializing monetary fields... monetary-field-handler.js:59:11
+[MONETARY] Found 5 monetary fields to initialize monetary-field-handler.js:5:11
+[MONETARY] Initializing field: debtOnMeter monetary-field-handler.js:13:13
+[MONETARY] Initializing field: DRROnMeter monetary-field-handler.js:13:13
+[MONETARY] Initializing field: credOnMeter monetary-field-handler.js:13:13
+[MONETARY] Initializing field: expSysDebt monetary-field-handler.js:13:13
+[MONETARY] Initializing field: DRR monetary-field-handler.js:13:13
+[DATE-FORMAT] Fragments ready, re-initializing date format fields... date-field-handler.js:101:11
+[DATE-FORMAT] Found 0 date format fields to initialize date-field-handler.js:5:11
+[ADDRESS-EDITOR] SmartUI fragments ready, ensuring event delegation is active address-editor.js:445:17
+[DATE-PICKER] initDatePickers called date-picker.js:16:17
+[DATE-PICKER] Found 0 date picker fields date-picker.js:19:17
+[ADDRESS-EDITOR] Setting up event delegation for address editor address-editor.js:33:17
+[ADDRESS-EDITOR] Event delegation setup completed address-editor.js:41:17
+[ROLLOVER] Rollout: exit, mode: always, buttonMode: dormant rollover-handler.js:352:11
+[ROLLOVER] exit set to active (always mode) rollover-handler.js:358:13
+[ROLLOVER] Rollout: menu, mode: always, buttonMode: dormant rollover-handler.js:352:11
+[ROLLOVER] menu set to active (always mode) rollover-handler.js:358:13
+[SEARCH] Populating customerInfo fields... ppdoc-search-handler.js:290:13
+[SEARCH] Converted offset moveInDate_Offset: -1204 → 17.02.2022 ppdoc-search-handler.js:308:19
+[SEARCH] Populated moveInDate_Offset: 17.02.2022 ppdoc-search-handler.js:312:17
+[SEARCH] Populated moveOutDate: ppdoc-search-handler.js:312:17
+[SEARCH] Populated email: markw@scottishpower.com ppdoc-search-handler.js:312:17
+[SEARCH] Populated mobile: 5550248484 ppdoc-search-handler.js:312:17
+[SEARCH] Populated phonenumber: 5559491000 ppdoc-search-handler.js:312:17
+[SEARCH] Auto-filled blank moveOutDate with 31.12.9999 ppdoc-search-handler.js:121:17
+[SEARCH] Auto-filled blank contract_End with 31.12.9999 ppdoc-search-handler.js:121:17
+[SEARCH] Auto-filled blank valid_To with 31.12.9999 ppdoc-search-handler.js:121:17
+[SCENARIO] Set search fields to Contract Account: 1612950401 ppdoc-scenario-loader.js:43:27
+[TREE] Scenario loaded, rebuilding tree... tree-menu.js:686:11
+
+[TREE DEBUG] Building tree... tree-menu.js:552:13
+[TREE] Account marked as active by supplystatus: On supply 2 tree-menu.js:108:17
+
+[TREE DEBUG] Created 7 rows tree-menu.js:654:13
+  Row 0: "Business Partner9318573654" (Level 1) tree-menu.js:656:15
+  Row 1: "Contract Account01612950401" (Level 2) tree-menu.js:656:15
+  Row 2: "Contract0082550200" (Level 3) tree-menu.js:656:15
+  Row 3: "29.10.2021Active" (Level 4) tree-menu.js:656:15
+  Row 4: "Contract Account01612747777" (Level 2) tree-menu.js:656:15
+  Row 5: "Contract007251200000" (Level 3) tree-menu.js:656:15
+  Row 6: "05.02.2025Active" (Level 4) tree-menu.js:656:15
+[TREE] Resetting tree to collapsed state tree-menu.js:229:13
+
+[TREE DEBUG] updateVisibility() starting... tree-menu.js:375:13
+Folder states: tree-menu.js:378:13
+  Row 0 (Business Partner9318573654): COLLAPSED tree-menu.js:381:17
+  Row 1 (Contract Account01612950401): COLLAPSED tree-menu.js:381:17
+  Row 4 (Contract Account01612747777): COLLAPSED tree-menu.js:381:17
+
+Processing collapsed folder 0 (Level 1) tree-menu.js:393:17
+  Hiding row 1 (Level 2) tree-menu.js:407:19
+  Hiding row 2 (Level 3) tree-menu.js:407:19
+  Hiding row 3 (Level 4) tree-menu.js:407:19
+  Hiding row 4 (Level 2) tree-menu.js:407:19
+  Hiding row 5 (Level 3) tree-menu.js:407:19
+  Hiding row 6 (Level 4) tree-menu.js:407:19
+
+Processing collapsed folder 1 (Level 2) tree-menu.js:393:17
+  Hiding row 2 (Level 3) tree-menu.js:407:19
+  Hiding row 3 (Level 4) tree-menu.js:407:19
+  Stopping at row 4 (Level 2) tree-menu.js:402:21
+
+Processing collapsed folder 4 (Level 2) tree-menu.js:393:17
+  Hiding row 5 (Level 3) tree-menu.js:407:19
+  Hiding row 6 (Level 4) tree-menu.js:407:19
+
+Final visibility: tree-menu.js:414:13
+  Row 0 "Business Partner9318573654": VISIBLE tree-menu.js:417:15
+  Row 1 "Contract Account01612950401": HIDDEN tree-menu.js:417:15
+  Row 2 "Contract0082550200": HIDDEN tree-menu.js:417:15
+  Row 3 "29.10.2021Active": HIDDEN tree-menu.js:417:15
+  Row 4 "Contract Account01612747777": HIDDEN tree-menu.js:417:15
+  Row 5 "Contract007251200000": HIDDEN tree-menu.js:417:15
+  Row 6 "05.02.2025Active": HIDDEN tree-menu.js:417:15
+
+[TREE DEBUG] repositionRows() starting... tree-menu.js:425:13
+  Setting Row 0 to position 0px tree-menu.js:430:17
+Total height needed: 24px tree-menu.js:440:13
+[TREE] Flat tree built successfully tree-menu.js:671:13
+[TREE] Arrow clicked on folder: 
+Object { element: div.tree-row, level: 1, isFolder: true, isSelectable: false, supplyType: null, collapsed: false, rowIndex: 0, label: "Business Partner9318573654", arrow: img.tree-arrow, icon: img.tree-icon }
+tree-menu.js:297:17
+
+[TREE DEBUG] updateVisibility() starting... tree-menu.js:375:13
+Folder states: tree-menu.js:378:13
+  Row 0 (Business Partner9318573654): EXPANDED tree-menu.js:381:17
+  Row 1 (Contract Account01612950401): COLLAPSED tree-menu.js:381:17
+  Row 4 (Contract Account01612747777): COLLAPSED tree-menu.js:381:17
+
+Processing collapsed folder 1 (Level 2) tree-menu.js:393:17
+  Hiding row 2 (Level 3) tree-menu.js:407:19
+  Hiding row 3 (Level 4) tree-menu.js:407:19
+  Stopping at row 4 (Level 2) tree-menu.js:402:21
+
+Processing collapsed folder 4 (Level 2) tree-menu.js:393:17
+  Hiding row 5 (Level 3) tree-menu.js:407:19
+  Hiding row 6 (Level 4) tree-menu.js:407:19
+
+Final visibility: tree-menu.js:414:13
+  Row 0 "Business Partner9318573654": VISIBLE tree-menu.js:417:15
+  Row 1 "Contract Account01612950401": VISIBLE tree-menu.js:417:15
+  Row 2 "Contract0082550200": HIDDEN tree-menu.js:417:15
+  Row 3 "29.10.2021Active": HIDDEN tree-menu.js:417:15
+  Row 4 "Contract Account01612747777": VISIBLE tree-menu.js:417:15
+  Row 5 "Contract007251200000": HIDDEN tree-menu.js:417:15
+  Row 6 "05.02.2025Active": HIDDEN tree-menu.js:417:15
+
+[TREE DEBUG] repositionRows() starting... tree-menu.js:425:13
+  Setting Row 0 to position 0px tree-menu.js:430:17
+  Setting Row 1 to position 24px tree-menu.js:430:17
+  Setting Row 4 to position 48px tree-menu.js:430:17
+Total height needed: 72px tree-menu.js:440:13
+
+[TREE DEBUG] After toggle, checking actual positions: tree-menu.js:363:13
+Row 0 "Business Partner9318573654": style.top=0px, actual relative=0px tree-menu.js:368:17
+Row 1 "Contract Account01612950401": style.top=24px, actual relative=24px tree-menu.js:368:17
+Row 4 "Contract Account01612747777": style.top=48px, actual relative=48px tree-menu.js:368:17
+[TREE] Arrow clicked on folder: 
+Object { element: div.tree-row, level: 2, isFolder: true, isSelectable: false, supplyType: null, collapsed: false, rowIndex: 1, label: "Contract Account01612950401", arrow: img.tree-arrow, icon: img.tree-icon }
+tree-menu.js:297:17
+
+[TREE DEBUG] updateVisibility() starting... tree-menu.js:375:13
+Folder states: tree-menu.js:378:13
+  Row 0 (Business Partner9318573654): EXPANDED tree-menu.js:381:17
+  Row 1 (Contract Account01612950401): EXPANDED tree-menu.js:381:17
+  Row 4 (Contract Account01612747777): COLLAPSED tree-menu.js:381:17
+
+Processing collapsed folder 4 (Level 2) tree-menu.js:393:17
+  Hiding row 5 (Level 3) tree-menu.js:407:19
+  Hiding row 6 (Level 4) tree-menu.js:407:19
+
+Final visibility: tree-menu.js:414:13
+  Row 0 "Business Partner9318573654": VISIBLE tree-menu.js:417:15
+  Row 1 "Contract Account01612950401": VISIBLE tree-menu.js:417:15
+  Row 2 "Contract0082550200": VISIBLE tree-menu.js:417:15
+  Row 3 "29.10.2021Active": VISIBLE tree-menu.js:417:15
+  Row 4 "Contract Account01612747777": VISIBLE tree-menu.js:417:15
+  Row 5 "Contract007251200000": HIDDEN tree-menu.js:417:15
+  Row 6 "05.02.2025Active": HIDDEN tree-menu.js:417:15
+
+[TREE DEBUG] repositionRows() starting... tree-menu.js:425:13
+  Setting Row 0 to position 0px tree-menu.js:430:17
+  Setting Row 1 to position 24px tree-menu.js:430:17
+  Setting Row 2 to position 48px tree-menu.js:430:17
+  Setting Row 3 to position 72px tree-menu.js:430:17
+  Setting Row 4 to position 96px tree-menu.js:430:17
+Total height needed: 120px tree-menu.js:440:13
+
+[TREE DEBUG] After toggle, checking actual positions: tree-menu.js:363:13
+Row 0 "Business Partner9318573654": style.top=0px, actual relative=0px tree-menu.js:368:17
+Row 1 "Contract Account01612950401": style.top=24px, actual relative=24px tree-menu.js:368:17
+Row 2 "Contract0082550200": style.top=48px, actual relative=48px tree-menu.js:368:17
+Row 3 "29.10.2021Active": style.top=72px, actual relative=72px tree-menu.js:368:17
+Row 4 "Contract Account01612747777": style.top=96px, actual relative=96px tree-menu.js:368:17
+[TREE] Selectable icon clicked on row: 
+Object { element: div.tree-row, level: 4, isFolder: false, isSelectable: true, supplyType: "electricity", collapsed: false, rowIndex: 3, label: "29.10.2021Active", icon: img.tree-icon }
+tree-menu.js:325:17
+[TREE] Selected supply type: electricity tree-menu.js:181:13
+[PENCIL] Pencil button clicked pencil-handler.js:370:13
+[PENCIL] Processing electricity account pencil-handler.js:396:13
+[PENCIL] No buttons exist, creating active button set pencil-handler.js:404:15
+[PENCIL] Creating/switching to electricity button set pencil-handler.js:89:13
+[SEARCH] Creating active electricity button set ppdoc-search-handler.js:158:13
+[SEARCH] Creating electricity buttons in activity section ppdoc-search-handler.js:181:13
+[SEARCH] Cleared existing buttons ppdoc-search-handler.js:152:15
+[SEARCH] Created button: appointment (image: appointment) at Y:39 ppdoc-search-handler.js:232:15
+[SEARCH] Created button: deappointment (image: deappointment) at Y:66 ppdoc-search-handler.js:232:15
+[SEARCH] Created button: adjustcreditdebt (image: adjustcreditdebt) at Y:93 ppdoc-search-handler.js:232:15
+[SEARCH] Created button: replacementkey (image: replacementkey) at Y:120 ppdoc-search-handler.js:232:15
+[SEARCH] Created button: wipedown (image: wipedown) at Y:147 ppdoc-search-handler.js:232:15
+[SEARCH] Created button: tariffchange (image: tariffchange) at Y:174 ppdoc-search-handler.js:232:15
+[SEARCH] Created button: changeppdocstatus (image: changeppdocstatus) at Y:201 ppdoc-search-handler.js:232:15
+[SEARCH] Created Process Links button at Y:252 ppdoc-search-handler.js:253:13
+[SEARCH] electricity button set created successfully ppdoc-search-handler.js:258:13
+[PENCIL] Set global buttonMode to activated pencil-handler.js:97:15
+[PENCIL] Created active electricity buttons pencil-handler.js:99:15
+[PENCIL] Populating electricity supply fields... pencil-handler.js:245:13
+[PENCIL] Populated contract_Account: 1612950401 pencil-handler.js:275:17
+[PENCIL] Populated contract: 82550200 pencil-handler.js:275:17
+[PENCIL] Converted offset contract_Start_Offset: -1315 → 29.10.2021 pencil-handler.js:271:19
+[PENCIL] Populated contract_Start_Offset: 29.10.2021 pencil-handler.js:275:17
+[PENCIL] Converted offset valid_From_Offset: -1815 → 16.06.2020 pencil-handler.js:271:19
+[PENCIL] Populated valid_From_Offset: 16.06.2020 pencil-handler.js:275:17
+[PENCIL] Populated refNo: 016258259166 pencil-handler.js:275:17
+[PENCIL] Populated PPMIP: SPOW_V pencil-handler.js:275:17
+[PENCIL] Populated ppmipPhone: 03301010444 pencil-handler.js:275:17
+[PENCIL] Populated MAM: BMSL_M pencil-handler.js:275:17
+[PENCIL] Populated mamPhone: 03301010444 pencil-handler.js:275:17
+[PENCIL] Populated meter: K pencil-handler.js:275:17
+[PENCIL] Populated meterType: 4 pencil-handler.js:275:17
+[PENCIL] Populated meterTariff: 58 pencil-handler.js:275:17
+[PENCIL] Populated debtOnMeter: 0 pencil-handler.js:275:17
+[PENCIL] Populated DRROnMeter: 0 pencil-handler.js:275:17
+[PENCIL] Populated credOnMeter: 35.24 pencil-handler.js:275:17
+[PENCIL] Populated expSysDebt: 0 pencil-handler.js:275:17
+[PENCIL] Populated creationReason: creationChangeOfSupplierGain pencil-handler.js:275:17
+[PENCIL] Populated meter_Serial: S09P74821 pencil-handler.js:275:17
+[PENCIL] Populated device_Start: 10.10.2021 pencil-handler.js:275:17
+[PENCIL] Converted offset last_Comm_Offset: -12 → 24.05.2025 pencil-handler.js:271:19
+[PENCIL] Populated last_Comm_Offset: 24.05.2025 pencil-handler.js:275:17
+[PENCIL] Populated MPANMPRN with MPAN: 1800011924448 pencil-handler.js:285:17
+[PENCIL] Set status to: Active (from On supply) pencil-handler.js:313:19
+[PENCIL] electricity supply fields populated successfully pencil-handler.js:324:13
+[PENCIL] Creating fresh constructed fields pencil-handler.js:188:13
+[PENCIL] Cached constructed fields to localStorage pencil-handler.js:234:13
+[PENCIL] Populated name_Address_Combo: Mark Woodruff / EDINBURGH, Main Street 17 pencil-handler.js:155:15
+[PENCIL] Activating grey-to-white fields... pencil-handler.js:51:13
+[PENCIL] Activated field: uselessWhiteNotes-container (grey → white) pencil-handler.js:70:17
+[PENCIL] Pencil button processing completed successfully pencil-handler.js:425:13
+[ROLLOVER] Rollout: pencil, mode: always, buttonMode: activated rollover-handler.js:352:11
+[ROLLOVER] pencil set to active (always mode) rollover-handler.js:358:13
+[ROLLOVER] Rollout: appointment, mode: standard, buttonMode: activated rollover-handler.js:352:11
+[ROLLOVER] appointment set to active (standard mode) rollover-handler.js:366:13
+[ROLLOVER] Rollout: deappointment, mode: standard, buttonMode: activated rollover-handler.js:352:11
+[ROLLOVER] deappointment set to active (standard mode) rollover-handler.js:366:13
+[ROLLOVER] Rollout: adjustcreditdebt, mode: standard, buttonMode: activated rollover-handler.js:352:11
+[ROLLOVER] adjustcreditdebt set to active (standard mode) rollover-handler.js:366:13
+[ROLLOVER] Button clicked: replacementkey, mode: standard, buttonMode: activated rollover-handler.js:90:11
+[ROLLOVER] Toggling button: replacementkey to inactive rollover-handler.js:126:11
+[ROLLOVER] Kept appointment ACTIVE rollover-handler.js:157:17
+[ROLLOVER] Kept deappointment ACTIVE rollover-handler.js:157:17
+[ROLLOVER] Kept adjustcreditdebt ACTIVE rollover-handler.js:157:17
+[ROLLOVER] Set replacementkey to INACTIVE (toggled off) rollover-handler.js:152:17
+[ROLLOVER] Kept wipedown ACTIVE rollover-handler.js:157:17
+[ROLLOVER] Kept tariffchange ACTIVE rollover-handler.js:157:17
+[ROLLOVER] Kept changeppdocstatus ACTIVE rollover-handler.js:157:17
+[ROLLOVER] Loading fragment for: replacementkey rollover-handler.js:168:11
+[ROLLOVER] Saved 40 field values rollover-handler.js:237:11
+[ROLLOVER] Restoring button states and field values after fragment reload rollover-handler.js:206:17
+[ROLLOVER] Restoring states: replacementkey INACTIVE, others ACTIVE rollover-handler.js:259:11
+[ROLLOVER] Restored appointment as ACTIVE rollover-handler.js:290:17
+[ROLLOVER] Restored deappointment as ACTIVE rollover-handler.js:290:17
+[ROLLOVER] Restored adjustcreditdebt as ACTIVE rollover-handler.js:290:17
+[ROLLOVER] Restored replacementkey as INACTIVE rollover-handler.js:285:17
+[ROLLOVER] Restored wipedown as ACTIVE rollover-handler.js:290:17
+[ROLLOVER] Restored tariffchange as ACTIVE rollover-handler.js:290:17
+[ROLLOVER] Restored changeppdocstatus as ACTIVE rollover-handler.js:290:17
+[ROLLOVER] Restored 40 field values rollover-handler.js:253:11
+[PENCIL] Re-populating fields after fragment load... pencil-handler.js:333:13
+[PENCIL] Populating electricity supply fields... pencil-handler.js:245:13
+[PENCIL] Populated contract_Account: 1612950401 pencil-handler.js:275:17
+[PENCIL] Populated contract: 82550200 pencil-handler.js:275:17
+[PENCIL] Converted offset contract_Start_Offset: -1315 → 29.10.2021 pencil-handler.js:271:19
+[PENCIL] Populated contract_Start_Offset: 29.10.2021 pencil-handler.js:275:17
+[PENCIL] Converted offset valid_From_Offset: -1815 → 16.06.2020 pencil-handler.js:271:19
+[PENCIL] Populated valid_From_Offset: 16.06.2020 pencil-handler.js:275:17
+[PENCIL] Populated refNo: 016258259166 pencil-handler.js:275:17
+[PENCIL] Populated PPMIP: SPOW_V pencil-handler.js:275:17
+[PENCIL] Populated ppmipPhone: 03301010444 pencil-handler.js:275:17
+[PENCIL] Populated MAM: BMSL_M pencil-handler.js:275:17
+[PENCIL] Populated mamPhone: 03301010444 pencil-handler.js:275:17
+[PENCIL] Populated meter: K pencil-handler.js:275:17
+[PENCIL] Populated meterType: 4 pencil-handler.js:275:17
+[PENCIL] Populated meterTariff: 58 pencil-handler.js:275:17
+[PENCIL] Populated debtOnMeter: 0 pencil-handler.js:275:17
+[PENCIL] Populated DRROnMeter: 0 pencil-handler.js:275:17
+[PENCIL] Populated credOnMeter: 35.24 pencil-handler.js:275:17
+[PENCIL] Populated expSysDebt: 0 pencil-handler.js:275:17
+[PENCIL] Populated creationReason: creationChangeOfSupplierGain pencil-handler.js:275:17
+[PENCIL] Populated meter_Serial: S09P74821 pencil-handler.js:275:17
+[PENCIL] Populated device_Start: 10.10.2021 pencil-handler.js:275:17
+[PENCIL] Converted offset last_Comm_Offset: -12 → 24.05.2025 pencil-handler.js:271:19
+[PENCIL] Populated last_Comm_Offset: 24.05.2025 pencil-handler.js:275:17
+[PENCIL] Populated MPANMPRN with MPAN: 1800011924448 pencil-handler.js:285:17
+[PENCIL] Set status to: Active (from On supply) pencil-handler.js:313:19
+[PENCIL] electricity supply fields populated successfully pencil-handler.js:324:13
+[PENCIL] Using cached constructed fields from localStorage pencil-handler.js:180:17
+[PENCIL] Populated name_Address_Combo: Mark Woodruff / EDINBURGH, Main Street 17 pencil-handler.js:155:15
+[PENCIL] Re-populated electricity fields after fragment load pencil-handler.js:361:13
+[MONETARY] Lower fragment ready, re-initializing monetary fields... monetary-field-handler.js:65:11
+[MONETARY] Found 5 monetary fields to initialize monetary-field-handler.js:5:11
+[DATE-FORMAT] Lower fragment ready, re-initializing date format fields... date-field-handler.js:107:11
+[DATE-FORMAT] Found 0 date format fields to initialize date-field-handler.js:5:11
+[ADDRESS-EDITOR] Lower fragment ready, ensuring event delegation is active address-editor.js:438:17
+[DATE-PICKER] initDatePickers called date-picker.js:16:17
+[DATE-PICKER] Found 0 date picker fields date-picker.js:19:17
+[ADDRESS-EDITOR] Setting up event delegation for address editor address-editor.js:33:17
+[ADDRESS-EDITOR] Event delegation setup completed address-editor.js:41:17
+[ROLLOVER] Rollout: replacementkey, mode: dormant, buttonMode: standard rollover-handler.js:352:11
+[ROLLOVER] replacementkey set to inactive (dormant mode) rollover-handler.js:362:13
+[ROLLOVER] Rollout: adjustcreditdebt, mode: standard, buttonMode: standard rollover-handler.js:352:11
+[ROLLOVER] adjustcreditdebt set to active (standard mode) rollover-handler.js:366:13
+[PENCIL] Re-populating fields after fragment load... pencil-handler.js:333:13
+[PENCIL] Populating electricity supply fields... pencil-handler.js:245:13
+[PENCIL] Populated contract_Account: 1612950401 pencil-handler.js:275:17
+[PENCIL] Populated contract: 82550200 pencil-handler.js:275:17
+[PENCIL] Converted offset contract_Start_Offset: -1315 → 29.10.2021 pencil-handler.js:271:19
+[PENCIL] Populated contract_Start_Offset: 29.10.2021 pencil-handler.js:275:17
+[PENCIL] Converted offset valid_From_Offset: -1815 → 16.06.2020 pencil-handler.js:271:19
+[PENCIL] Populated valid_From_Offset: 16.06.2020 pencil-handler.js:275:17
+[PENCIL] Populated refNo: 016258259166 pencil-handler.js:275:17
+[PENCIL] Populated PPMIP: SPOW_V pencil-handler.js:275:17
+[PENCIL] Populated ppmipPhone: 03301010444 pencil-handler.js:275:17
+[PENCIL] Populated MAM: BMSL_M pencil-handler.js:275:17
+[PENCIL] Populated mamPhone: 03301010444 pencil-handler.js:275:17
+[PENCIL] Populated meter: K pencil-handler.js:275:17
+[PENCIL] Populated meterType: 4 pencil-handler.js:275:17
+[PENCIL] Populated meterTariff: 58 pencil-handler.js:275:17
+[PENCIL] Populated debtOnMeter: 0 pencil-handler.js:275:17
+[PENCIL] Populated DRROnMeter: 0 pencil-handler.js:275:17
+[PENCIL] Populated credOnMeter: 35.24 pencil-handler.js:275:17
+[PENCIL] Populated emergencyCredit: 10.00 pencil-handler.js:275:17
+[PENCIL] Populated expSysDebt: 0 pencil-handler.js:275:17
+[PENCIL] Populated creationReason: creationChangeOfSupplierGain pencil-handler.js:275:17
+[PENCIL] Populated meter_Serial: S09P74821 pencil-handler.js:275:17
+[PENCIL] Populated device_Start: 10.10.2021 pencil-handler.js:275:17
+[PENCIL] Converted offset last_Comm_Offset: -12 → 24.05.2025 pencil-handler.js:271:19
+[PENCIL] Populated last_Comm_Offset: 24.05.2025 pencil-handler.js:275:17
+[PENCIL] Populated tariffSetting: 58 pencil-handler.js:275:17
+[PENCIL] Populated MPANMPRN with MPAN: 1800011924448 pencil-handler.js:285:17
+[PENCIL] Set status to: Active (from On supply) pencil-handler.js:313:19
+[PENCIL] electricity supply fields populated successfully pencil-handler.js:324:13
+[PENCIL] Using cached constructed fields from localStorage pencil-handler.js:180:17
+[PENCIL] Populated name_Address_Combo: Mark Woodruff / EDINBURGH, Main Street 17 pencil-handler.js:155:15
+[PENCIL] Populated full_Address_Trunc: 17 Main Street EDINBURGH pencil-handler.js:162:15
+[PENCIL] Re-populated electricity fields after fragment load pencil-handler.js:361:13
+[MONETARY] Lower fragment ready, re-initializing monetary fields... monetary-field-handler.js:65:11
+[MONETARY] Found 7 monetary fields to initialize monetary-field-handler.js:5:11
+[MONETARY] Initializing field: emergencyCredit monetary-field-handler.js:13:13
+[MONETARY] Initializing field: initKeyCredit monetary-field-handler.js:13:13
+[DATE-FORMAT] Lower fragment ready, re-initializing date format fields... date-field-handler.js:107:11
+[DATE-FORMAT] Found 1 date format fields to initialize date-field-handler.js:5:11
+[DATE-FORMAT] Initializing field: effFromDate date-field-handler.js:13:13
+[ADDRESS-EDITOR] Lower fragment ready, ensuring event delegation is active address-editor.js:438:17
+[DATE-PICKER] initDatePickers called date-picker.js:16:17
+[DATE-PICKER] Found 1 date picker fields date-picker.js:19:17
+[DATE-PICKER] Setting up field 0 : effFromDate date-picker.js:22:21
+[DATE-PICKER] Setting up field: effFromDate date-picker.js:28:17
+[DATE-PICKER] Calendar icon created (hidden) and positioned date-picker.js:76:17
+[DATE-PICKER] Field setup completed for: effFromDate date-picker.js:158:17
+[ADDRESS-EDITOR] Setting up event delegation for address editor address-editor.js:33:17
+[ADDRESS-EDITOR] Event delegation setup completed address-editor.js:41:17
+[DATE-PICKER] Field focused - showing icon date-picker.js:99:21
+[DATE-PICKER] Field clicked - showing icon date-picker.js:105:21
+[DATE-PICKER] Calendar icon clicked date-picker.js:91:21
+[DATE-PICKER] Opening date picker for field: effFromDate date-picker.js:162:17
+[DATE-PICKER] Creating calendar popup with background image date-picker.js:182:17
+[DATE-PICKER] Calendar popup created with background image and Enter key support date-picker.js:269:17
+[ROLLOVER] Rollout: editaddress, mode: always, buttonMode: standard rollover-handler.js:352:11
+[ROLLOVER] editaddress set to active (always mode) rollover-handler.js:358:13
+[ROLLOVER] Rollout: editaddress, mode: always, buttonMode: standard rollover-handler.js:352:11
+[ROLLOVER] editaddress set to active (always mode) rollover-handler.js:358:13
+[ROLLOVER] Rollout: generaterti, mode: dormant, buttonMode: standard rollover-handler.js:352:11
+[ROLLOVER] generaterti set to inactive (dormant mode) rollover-handler.js:362:13
+[ROLLOVER] Rollout: generaterti, mode: dormant, buttonMode: standard rollover-handler.js:352:11
+[ROLLOVER] generaterti set to inactive (dormant mode) rollover-handler.js:362:13
+Ruleset ignored due to bad selector. styles.css:220:55
+Unknown property '-moz-user-drag'.  Declaration dropped. tree-styles.css:107:18
+Elements matching selector: .tree-icon, .tree-arrow
+NodeList(10) [ img.tree-arrow, img.tree-icon, img.tree-arrow, img.tree-icon, img.tree-icon, img.tree-icon, img.tree-arrow, img.tree-icon, img.tree-icon, img.tree-icon ]
+Unknown property 'user-drag'.  Declaration dropped. tree-styles.css:109:13
+Elements matching selector: .tree-icon, .tree-arrow
+NodeList(10) [ img.tree-arrow, img.tree-icon, img.tree-arrow, img.tree-icon, img.tree-icon, img.tree-icon, img.tree-arrow, img.tree-icon, img.tree-icon, img.tree-icon ]

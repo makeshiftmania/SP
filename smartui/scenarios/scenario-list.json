@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Default",
+    "file": "../scenarios/default.json"
+  },
+  {
+    "name": "Hiroshi",
+    "file": "../scenarios/hiroshi.json"
+  },
+  {
+    "name": "Priya",
+    "file": "../scenarios/priya.json"
+  },
+  {
+    "name": "Carlos",
+    "file": "../scenarios/carlos.json"
+  },
+  {
+    "name": "Josh",
+    "file": "../scenarios/josh.json"
+  },
+  {
+    "name": "Johannes",
+    "file": "../scenarios/johannes.json"
+  },
+  {
+    "name": "Margaret",
+    "file": "../scenarios/margaret.json"
+  }
+]

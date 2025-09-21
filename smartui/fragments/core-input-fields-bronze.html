@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<div id="Smart_Menu_Bar" class="custom-dropdown dropdown-walkthrough" style="top:35px; left:127px; width:167px; z-index: 12000;">
+  <div class="selected-option">Agent Level</div>
+  <div class="dropdown-options" style="z-index: 12001;">
+    <div data-value="bronze">Bronze</div>
+    <!-- <div data-value="silver">Silver</div>
+    <div data-value="gold">Gold</div> -->
+  </div>
+</div>
+	
+<div id="scenario_Selector" class="custom-dropdown dropdown-scenario" style="top:100px; left:216px;">
+  <div class="selected-option">Contract Account</div>
+  <div class="dropdown-options">
+    <!-- Scenario options will be added by JS -->
+  </div>
+</div>
+
+<input class="input-field" 
+id="contract_Account" 
+style="top:129px; left:217px; height:16px; width:154px" 
+data-tippy-theme="green"
+data-tippy-content="You can search for an account using Contract Account, BPID or Contract number. We've repurposed this dropdown so you can load various scenarios in this simulator." readonly>
+
+<div id="full_address" class="custom-dropdown dropdown-fulladdress" style="top:153px; left:217px; width:237px; height:21px; z-index:13000;">
+  <div class="selected-option" style="width:237px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;"></div>
+  <div class="dropdown-options" style="position:absolute;"></div>
+</div>
+
+<div id="elecOrGas"
+     class="custom-dropdown dropdown-fuel input-field" data-tippy-theme="white"
+     data-tippy-content="Only ever a choice between Electricity or Gas. Once an account is loaded you can switch to the other supply on the BPID.">
+  <div class="selected-option"></div>
+  <div class="dropdown-options"></div>
+</div>
+
+<input class="input-field underline-field" 
+id="BPID" style="top:264px; left:265px; height:16px; width:122px" 
+data-tippy-theme="green"
+data-tippy-content="A Business Partner ID (or BPID) identifies the customer on our system. So a customer and a BPID can have multiple accounts (Gas or Electricity) assigned to it." readonly>
+
+<input class="input-field" 
+value="Person" 
+style="top:291px; left:265px; height:16px; width:122px" 
+data-tippy-theme="white"
+data-tippy-content="Different types of accounts do exist (businesses for example) but we are only ever going to see Person here." readonly>
+
+<input class="input-field" 
+id="full_Name" 
+style="top:316px; left:265px; height:16px; width:122px" 
+data-tippy-theme="green"
+data-tippy-content="Customer's full name" readonly>
+
+<input class="input-field duplicate-field underline-field" 
+data-field="contract_Account" 
+value="" 
+style="top:345px; left:265px; height:16px; width:122px;"  
+data-tippy-theme="white"
+data-tippy-content="This is the account number for either the Gas or Electricity." readonly>
+
+<input class="input-field underline-field" 
+id="contract" 
+style="top:372px; left:265px; height:16px; width:122px" 
+data-tippy-theme="green"
+data-tippy-content="The number for the Contract" readonly>
+
+<input class="input-field" 
+id="contract_Start" 
+style="top:399px; left:265px; height:16px; width:122px" 
+data-tippy-theme="white"
+data-tippy-content="The date the account was opened. You can also see this in UI5." readonly>
+
+<input class="input-field" 
+id="operating_Mode" 
+style="top:426px; left:265px; height:16px; width:122px" 
+data-tippy-theme="green"
+data-tippy-content="It's important to check this field. It can show as Credit or Prepayment mode. If it isn't as expected we need to address it. Generally with a proforma." readonly>
+
+<input class="input-field" 
+id="payment_Plan" 
+style="top:453px; left:265px; height:16px; width:122px" 
+data-tippy-theme="white"
+data-tippy-content="You can check common abbreviations in OneNote to know what each acronym means. We are expecting BMW which is a prepayment account." readonly>
+
+<input class="input-field" 
+id="read_Retrieval" 
+style="top:480px; left:265px; height:16px; width:122px" 
+data-tippy-theme="green"
+data-tippy-content="Customers a have a choice between the meter automatically updating us Monthly, Daily or Half Hourly." readonly>
+
+<input class="input-field" id="last_Comm" style="top:507px; left:265px; height:16px; width:80px" title="Last Communication Date" readonly>
+
+<input class="input-field" 
+id="last_Comm_Time" 
+style="top:507px; left:355px; height:16px; width:60px" 
+data-tippy-theme="white"
+data-tippy-content="This will tell us the last time our servers communicated with this meter. It can help diagnose when a meter is not communicating correctly." readonly>
+
+<input class="input-field underline-field" 
+id="pod" 
+style="top:588px; left:265px; height:16px; width:138px" 
+data-tippy-theme="green"
+data-tippy-content="POD is another way to refer to the MP*N" readonly>
+
+<input class="input-field underline-field" 
+id="device_Guid" 
+style="top:615px; left:265px; height:16px; width:201px" 
+data-tippy-theme="white"
+data-tippy-content="The Globally Unique Identifier (GUID) is a unique identifier for your smart meter. We use this to connect to the meter via mobile signal." readonly>
+
+<input class="input-field underline-field" 
+id="meter_Serial" 
+style="top:642px; left:265px; height:16px; width:138px" 
+data-tippy-theme="green"
+data-tippy-content="We use Meter Serial Numbers often to confirm we have the right device in the right property. It can also tell us information about what kind of device we have." readonly>
+
+<input class="input-field" 
+id="device_Start" 
+style="top:669px; left:265px; height:16px; width:82px"  
+data-tippy-theme="white"
+data-tippy-content="While the Contract Start Date tells you how long the account has been active, the Device Start tells you when this device was installed/commissioned." readonly>
+
+<input class="input-field" 
+id="device_End" 
+style="top:696px; left:265px; height:16px; width:82px" 
+data-tippy-theme="green"
+data-tippy-content="The date the device was removed/decommission. This will be 31.12.9999 for live Smart accounts." readonly>
+
+<input class="input-field" 
+id="SMSO_ID" 
+style="top:724px; left:265px; height:16px; width:138px" 
+data-tippy-theme="white"
+data-tippy-content="SMSO is a smart meter network. This is the ID of the network connected to." readonly>
+
+<input class="input-field" 
+id="firmware_Version" 
+style="top:780px; left:265px; height:16px; width:138px" 
+data-tippy-theme="green"
+data-tippy-content="Smart Meters often have software updates. Firmware versions tell us if we have the most up to date version of that software installed." readonly>
+
+<input class="input-field" 
+value="S2" 
+style="top:750px; left:265px; height:16px; width:138px" 
+data-tippy-theme="white"
+data-tippy-content="There are two generations of Smart meters. Smets1 and Smets2. The newer models have updated features and can do more than their older siblings." readonly>
+
+<input class="input-field" 
+id="device_Status" 
+style="top:804px; left:265px; height:16px; width:218px"  
+data-tippy-theme="green"
+data-tippy-content=" <div>
+  <span style='color:black; font-weight:bold;'>Commissioned</span> <br> means it was correctly installed and should be working correctly.<br><br>
+  <span style='color:black; font-weight:bold;'>Commissioned not communicating</span> <br> means the meter is commissioned but we have lost signal.<br><br>
+  <span style='color:black; font-weight:bold;'>Installed not commissioned</span> <br> means we are not communicating at all with the meter. We can raise a proforma to recommission the meter.<br><br>
+  You can also see <span style='color:black; font-weight:bold;'>Suspended</span>, 
+  <span style='color:black; font-weight:bold;'>Recovery</span>, 
+  <span style='color:black; font-weight:bold;'>Recovered</span>, 
+  <span style='color:black; font-weight:bold;'>Decommissioned</span>, and 
+  <span style='color:black; font-weight:bold;'>Withdrawn</span> which we will cover at the silver level.
+</div>" 
+readonly>
+
+<input class="input-field" 
+id="device_Location" 
+style="top:832px; left:265px; height:16px; width:218px" 
+data-tippy-theme="white"
+data-tippy-content="Gives an idea of where the meter is located in the property. Typically inside or outside but sometimes more specific." readonly>
+
+<input class="input-field" 
+id="smets1_DCC" 
+style="top:860px; left:265px; height:16px; width:56px" 
+title="Smets1-DCC" 
+readonly>
+	
+	<!-- Other Smart Devices -->
+	
+<input class="input-field" 
+id="OSD_COMMS_HUB" 
+style="top:980px; left:265px; height:16px; width:182px" 
+data-tippy-theme="green"
+data-tippy-content="Unique identifier for the communications HUB." readonly>
+
+<input class="input-field" 
+id="OSD_PPMID" 
+style="top:1006px; left:265px; height:16px; width:182px" 
+data-tippy-theme="white"
+data-tippy-content="Unique identifier for the communications HUB." readonly>
+
+<!-- Prepayment Settings -->
+
+<div id="pps-only-fields">
+<!-- Debt Settings Fields -->
+
+<input class="input-field" 
+id="debt-settings-source-bronze" 
+style="top:1033px; left:265px; height:16px; width:182px" 
+data-tippy-theme="green"
+data-tippy-content="Source of the debt settings data (SAP or Meter)" readonly>
+
+<input class="input-field" 
+id="debt-settings-timestamp-bronze" 
+style="top:1060px; left:265px; height:16px; width:182px" 
+data-tippy-theme="white"
+data-tippy-content="When the debt settings were last updated" readonly>
+
+<input class="input-field" 
+id="debt-settings-total-bronze" 
+style="top:1087px; left:265px; height:16px; width:182px" 
+data-tippy-theme="green"
+data-tippy-content="Total amount of debt on the account" readonly>
+
+<input class="input-field" 
+id="debt-settings-drr-bronze" 
+style="top:1114px; left:265px; height:16px; width:182px" 
+data-tippy-theme="white"
+data-tippy-content="Daily Recovery Rate - amount recovered per day" readonly>
+
+<input class="input-field" 
+id="debt-settings-max-bronze" 
+style="top:1141px; left:265px; height:16px; width:182px" 
+data-tippy-theme="green"
+data-tippy-content="Maximum percentage that can be recovered per day" readonly>
+
+<!-- Meter Balance Fields -->
+<input class="input-field" 
+id="meter-balance-source-bronze" 
+style="top:1168px; left:265px; height:16px; width:182px" 
+data-tippy-theme="white"
+data-tippy-content="Source of the meter balance data (SAP or Meter)" readonly>
+
+<input class="input-field" 
+id="meter-balance-timestamp-bronze" 
+style="top:1195px; left:265px; height:16px; width:182px" 
+data-tippy-theme="green"
+data-tippy-content="When the meter balance was last updated" readonly>
+
+<input class="input-field" 
+id="meter-balance-balance-bronze" 
+style="top:1222px; left:265px; height:16px; width:182px" 
+data-tippy-theme="white"
+data-tippy-content="Current balance on the meter" readonly>
+
+<input class="input-field" 
+id="meter-balance-emergency-bronze" 
+style="top:1249px; left:265px; height:16px; width:182px" 
+data-tippy-theme="green"
+data-tippy-content="Amount of emergency credit available" readonly>
+
+<input class="input-field" 
+id="meter-balance-threshold-bronze" 
+style="top:1276px; left:265px; height:16px; width:182px" 
+data-tippy-theme="white"
+data-tippy-content="Threshold at which low credit warning is triggered" readonly>
+
+<!-- Emergency Credit Fields -->
+<input class="input-field" 
+id="emergency-credit-source-bronze" 
+style="top:1303px; left:265px; height:16px; width:182px" 
+data-tippy-theme="green"
+data-tippy-content="Source of the emergency credit settings (SAP or Meter)" readonly>
+
+<input class="input-field" 
+id="emergency-credit-timestamp-bronze" 
+style="top:1330px; left:265px; height:16px; width:182px" 
+data-tippy-theme="white"
+data-tippy-content="When the emergency credit settings were last updated" readonly>
+
+<input class="input-field" 
+id="emergency-credit-limit-bronze" 
+style="top:1357px; left:265px; height:16px; width:182px" 
+data-tippy-theme="green"
+data-tippy-content="Maximum amount of emergency credit allowed" readonly>
+
+<input class="input-field" 
+id="emergency-credit-threshold-bronze" 
+style="top:1384px; left:265px; height:16px; width:182px" 
+data-tippy-theme="white"
+data-tippy-content="Threshold at which emergency credit is triggered" readonly>
+
+<!-- NDCID Fields -->
+<input class="input-field" 
+id="ndcid-source-bronze" 
+style="top:1411px; left:265px; height:16px; width:182px" 
+data-tippy-theme="green"
+data-tippy-content="Source of the non-disablement calendar data (SAP or Meter)" readonly>
+
+<input class="input-field" 
+id="ndcid-timestamp-bronze" 
+style="top:1438px; left:265px; height:16px; width:182px" 
+data-tippy-theme="white"
+data-tippy-content="When the calendar data was last updated" readonly>
+
+<input class="input-field" 
+id="ndcid-calendar-bronze" 
+style="top:1465px; left:265px; height:16px; width:182px" 
+data-tippy-theme="green"
+data-tippy-content="ID of the non-disablement calendar" readonly>
+
+<input class="input-field" 
+id="ndcid-description-bronze" 
+style="top:1492px; left:265px; height:16px; width:182px" 
+data-tippy-theme="white"
+data-tippy-content="Description of the non-disablement calendar" readonly>
+
+</div><!-- End pps-only-fields -->

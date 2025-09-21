@@ -1,0 +1,13 @@
+[ISU-TREE] ISU-tree-menu.js loaded ISU-tree-menu.js:2:9
+Uncaught ReferenceError: can't access lexical declaration 'CONFIG' before initialization
+    <anonymous> http://localhost:5003/scripts/ISU-tree-menu.js:368
+    <anonymous> http://localhost:5003/scripts/ISU-tree-menu.js:379
+ISU-tree-menu.js:368:5
+    <anonymous> http://localhost:5003/scripts/ISU-tree-menu.js:368
+    <anonymous> http://localhost:5003/scripts/ISU-tree-menu.js:379
+[ISU-TREE] DOM ready, building tree... ISU-tree-menu.js:362:13
+[ISU-TREE] Building tree... ISU-tree-menu.js:314:13
+Uncaught ReferenceError: can't access lexical declaration 'treeContainer' before initialization
+    buildTree http://localhost:5003/scripts/ISU-tree-menu.js:316
+    <anonymous> http://localhost:5003/scripts/ISU-tree-menu.js:363
+ISU-tree-menu.js:316:30

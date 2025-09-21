@@ -1,0 +1,23 @@
+[TREE] tree-menu.js (COLLAPSED DEFAULT) loaded tree-menu.js:2:9
+[TREE] Debug functions and API exposed tree-menu.js:714:11
+[SEARCH] ppdoc-search-handler.js loaded ppdoc-search-handler.js:2:9
+[PENCIL] ppdoc-pencil-handler.js loaded pencil-handler.js:2:9
+[DATE-PICKER] Script loaded date-picker.js:1:9
+[DATE-PICKER] Initializing date picker component date-picker.js:7:13
+No custom-dropdown elements found on the page dropdown-handler.js:7:17
+[DATE-PICKER] initDatePickers called date-picker.js:16:17
+[DATE-PICKER] Found 0 date picker fields date-picker.js:19:17
+[TREE] Fragments ready, building flat tree... tree-menu.js:680:13
+
+[TREE DEBUG] Building tree... tree-menu.js:552:13
+[TREE] No scenario data - building default tree tree-menu.js:568:15
+[TREE] Building default tree (no scenario data) tree-menu.js:486:13
+[TREE] Default tree built successfully tree-menu.js:548:13
+[SEARCH] Initializing search functionality... ppdoc-search-handler.js:492:13
+[SEARCH] Search functionality initialized ppdoc-search-handler.js:504:13
+[PENCIL] Initializing pencil button functionality... pencil-handler.js:291:13
+[PENCIL] Pencil button functionality initialized pencil-handler.js:303:13
+[DATE-PICKER] initDatePickers called date-picker.js:16:17
+[DATE-PICKER] Found 0 date picker fields date-picker.js:19:17
+[ROLLOVER] Rollout: exit, mode: always, buttonMode: dormant rollover-handler.js:352:11
+[ROLLOVER] exit set to active (always mode) rollover-handler.js:358:13

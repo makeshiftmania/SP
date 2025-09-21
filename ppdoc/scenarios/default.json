@@ -1,0 +1,90 @@
+{
+    "customerInfo": {
+      "first_Name": "Default",
+      "last_Name": "Account",
+      "flatnumber": "",
+      "housenumber": "57",
+      "street": "Camphill Rd",
+      "city": "Liverpool",
+      "postcode": "L25 7UF",
+      "moveInDate": "-1204",
+      "moveOutDate": null,
+      "email": "defaultaccount@scottishpower.com",
+      "emailLastUpdated_Offset": -50,
+      "mobile": "5555555555",
+      "mobileLastUpdated": null,
+      "workphone": "5556666666",
+      "workphoneLastUpdated": null,
+      "phonenumber": "5557777777",
+      "phonenumberLastUpdated": null,
+      "gender": "male",
+      "preferredcomm": "5555555555",
+      "corrflatnumber": null,
+      "corrhousenumber": null,
+      "corrstreet": null,
+      "corrcity": null,
+      "corrpostcode": null,
+      "BPID": "9318888888"
+    },
+    "supplyInfo": {
+      "electricity": {
+        "accountInfo": {
+          "elecOrGas": "Electricity",
+          "contract_Account": "1612592928",
+          "contract": "825592999",
+          "contract_Start_Offset": -1315,
+          "contract_End": "",
+          "valid_From_Offset": -1815,
+          "valid_To_Offset": null,
+          "payment_Plan": "BMW",
+          "pod": "5935777377",
+          "MPANMPRN": "180001188888",
+          "refNumber": "016212345678",
+          "PPMIP": "SPOW_V",
+          "ppmipPhone": "03301010444",
+          "MAM": "BMSL_M",
+          "mamPhone": "03301010444",
+          "meter": "K",
+          "meterType": "4",
+          "meterTariff": "58",
+          "debtOnMeter": "0",
+          "DRROnMeter": "0",
+          "credOnMeter": "0",
+          "expSysDebt": "0",
+          "agreedDRR": "0"
+        },
+        "deviceInfo": {
+          "meter_Serial": "S09P71284",
+          "device_Start": "10.10.2019",
+          "device_End": "31.12.9999",
+          "last_Comm_Offset": -12,
+          "smartortrad": "trad",
+          "devicepaymentmode": "Prepayment",
+          "supplystatus": "On supply",
+          "metermake": "BAU"
+        }
+      },
+      "gas": {
+        "accountInfo": {
+          "elecOrGas": "Gas",
+          "contract_Account": "1612748888",
+          "contract": "7251211111",
+          "contract_Start_Offset": -120,
+          "contract_End": "",
+          "payment_Plan": "BMW",
+          "pod": "180002101052",
+          "MPRN": "1800048194298"
+        },
+        "deviceInfo": {
+          "operating_Mode": "Prepayment",
+          "meter_Serial": "L0123488888M",
+          "device_Start": "10.10.2021",
+          "device_End": "31.12.9999",
+          "last_Comm_Offset": -21,
+          "smartortrad": "trad",
+          "metermake": "BAU",
+          "supplystatus": "On supply"
+        }
+      }
+    }
+}

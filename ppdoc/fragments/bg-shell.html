@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<select id="findBy" class="white-field" style="position:absolute; top:99px; left:102px; width:104px; height:26px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+    <option value=""></option>
+    <option value="findByContract_Account">Contract Account</option>
+    <option value="findByMPANMPRN">MPAN / MPRN</option>
+    <option value="findByReferenceNumber">Reference Number</option>
+    <option value="findByContract">Contract</option>
+    <option value="findByPartner">Partner</option>
+    <option value="findByMeterSerial">Meter Serial No.</option>
+    <option value="findByGasCardNo">Gas Card No.</option>
+    <option value="findByPrepaymentDocNo">Prepayment Doc No.</option>
+  </select>
+
+<!-- Scenario Selector attached to Menu button with rollover image -->
+<div id="scenarioSelector" class="custom-dropdown"
+     style="position:absolute; top:36px; left:-1px; width:51px; height:22px;">
+
+  <div class="selected-option">
+    <img id="btn-scenarioSelector"
+         class="nav-button"
+         src="../images/buttons/menu-active.png"
+         data-imgprefix="menu"
+         data-mode="always"
+         onmouseover="handleRollover(this)"
+         onmouseout="handleRollout(this)"
+         style="width:51px; height:22px;">
+  </div>
+  
+
+  <div class="dropdown-options" style="z-index:15;">
+    <!-- ppdoc-loader.js will inject options here -->
+  </div>
+</div>  
+
+<img id="btn-exit"
+class="nav-button"
+src="../images/buttons/exit-active.png"
+data-imgprefix="exit"
+data-mode="always"
+onclick="handleButtonClick(this)"
+onmouseover="handleRollover(this)"
+onmouseout="handleRollout(this)"
+style="position:absolute; top:37px; left:367px; width:36px; height:22px;">
+
+<img id="btn-refresh"
+class="nav-button"
+src="../images/buttons/refresh-active.png"
+data-imgprefix="refresh"
+data-mode="always"
+onclick="handleButtonClick(this)"
+onmouseover="handleRollover(this)"
+onmouseout="handleRollout(this)"
+style="position:absolute; top:99px; left:1110px; width:24px; height:27px;">
+
+<img id="btn-pencil"
+class="nav-button"
+src="../images/buttons/pencil-active.png"
+data-imgprefix="pencil"
+data-mode="always"
+onmouseover="handleRollover(this)"
+onmouseout="handleRollout(this)"
+style="position:absolute; top:180px; left:64px; width:33px; height:22px;">
+
+<!-- Dynamic button area - populated by JavaScript -->
+<div id="activity-section" style="position:absolute; top:546px; left:0px; width:220px;">
+  <!-- Activity image and buttons will be inserted here by search handler -->
+</div>
+
+<!-- Process Links button will be created dynamically with other buttons -->
+
+<!-- End of side block links -->
+
+<input id="searchType" class="white-field" style="position:absolute; top:129px; left:102px; width:98px; height:16px;">
+<input id="contract" style="position:absolute; top:129px; left:334px; width:82px; height:16px;">
+<input id="name_Address_Combo" readonly style="position:absolute; font-weight: normal; top:99px; left:254px; width:500px; height:20px; color:#007cbf; background:transparent; border:none; font-weight: normal; font-family: Tahoma, 'Segoe UI', 'MS Sans Serif', sans-serif;">
+<input id="contract_Account" style="position:absolute; top:129px; left:558px; width:98px; height:16px;">
+<input id="MPANMPRN" style="position:absolute; top:156px; left:334px; width:114px; height:16px;">
+<input id="refNo" alt="Install Date" style="position:absolute; top:156px; left:558px; width:154px; height:16px;">
+<select id="creationReason" style="position:absolute; top:154px; left:878px; width:248px; height:26px;">
+    <option value=""></option>
+    <option value="creationChangeOfSupplierGain">Change of Supplier -Gain</option>
+    <option value="creationMtrExchange">Mtr. Exchange (CR-&gt;PP)</option>
+    <option value="creationCOT">Change of Tenant</option>
+    <option value="creationMigCX">Migrated Customers PPDOC Creation</option>
+  </select>
+<input id="meter_Serial" style="position:absolute; top:240px; left:1030px; width:98px; height:16px;">
+<input id="meter" style="position:absolute; top:294px; left:1046px; width:82px; height:16px;">
+<input id="meterType" style="position:absolute; top:321px; left:1046px; width:82px; height:16px;">
+<input id="device_Start" alt="Install Date" style="position:absolute; top:348px; left:1046px; width:82px; height:16px;">
+<input id="meterTariff" style="position:absolute; top:375px; left:1046px; width:82px; height:16px;">
+<input id="MAP" style="position:absolute; top:402px; left:1046px; width:82px; height:16px;">
+<input id="PPMIP" style="position:absolute; top:429px; left:1046px; width:82px; height:16px;">
+<input id="ppmipPhone" style="position:absolute; top:456px; left:1006px; width:122px; height:16px;">
+<input id="MAM" style="position:absolute; top:483px; left:1046px; width:82px; height:16px;">
+<input id="mamPhone" style="position:absolute; top:510px; left:1006px; width:122px; height:16px;">
+<input id="last_Comm_Offset" style="position:absolute; top:591px; left:1046px; width:82px; height:16px;">
+<input id="debtOnMeter" data-money="true" style="position:absolute; top:618px; left:1046px; width:82px; height:16px;">
+<input id="DRROnMeter" data-money="true" style="position:absolute; top:645px; left:1046px; width:82px; height:16px;">
+<input id="credOnMeter" data-money="true" style="position:absolute; top:672px; left:1046px; width:82px; height:16px;">
+<input id="expSysDebt" data-money="true" style="position:absolute; top:753px; left:1046px; width:82px; height:16px;">
+<input id="DRR" data-money="true" style="position:absolute; top:780px; left:1046px; width:74px; height:16px;">
+<div id="customer-tree" style="position:absolute; top:207px; left:22px; width:165px; height:331px;">
+    <!-- Tree populated by JS -->
+<ul class="tree" id="tree-root"></ul>
+    <!-- Information panel -->
+<input id="informationpanel" style="position:absolute; top:321px; left:1046px; width:82px; height:16px;">
+</div>

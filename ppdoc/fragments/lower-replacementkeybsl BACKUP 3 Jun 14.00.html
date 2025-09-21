@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<select id="replacementKeyReason" class="white-field" style="position:absolute; top:2px; left:91px; width:263px; height:26px;">
+  <option value=""></option>
+  <option value="brokenstolenlost">Broken/Stolen/Lost</option>
+  <option value="faultyKey">Faulty Key</option>
+  <option value="keyNotReceived">Key Not Received</option>
+  
+</select>
+
+<img id="btn-senddataflow"
+     class="nav-button"
+     src="../images/buttons/senddataflow-inactive.png"
+     data-imgprefix="senddataflow"
+     data-mode="dormant"
+     onclick="handleButtonClick(this)"
+     onmouseover="handleRollover(this)"
+     onmouseout="handleRollout(this)"
+     style="position:absolute; top:1px; left:377px; width:120px; height:27px;">
+
+<!-- Replacement Key BSL Field Overlay -->
+
+<input id="effFromDate" 
+       data-date-picker="true"
+       data-date-format="true" 
+       data-date-picker-group="RepKeyBSLData"
+       data-date-picker-key="lastSent"
+       style="position:absolute; top:61px; left:186px; width:82px; height:16px;">
+
+<input id="meter_Serial" class="white-field" style="position:absolute; top:61px; left:562px; width:97px; height:16px;">
+<input id="ecsEmergencyCreditLimitMeter" class="white-field" data-money="true" data-money-max="30" style="position:absolute; top:89px; left:562px; width:65px; height:16px;">
+
+<select id="emergencyIndicator" class="white-field" style="position:absolute; top:86px; left:186px; width:145px; height:26px;">
+  
+  <option value="pickUpKeyAtTheOutlet">Pick Up Key at the Outlet</option>
+  <option value="issueKeyByFirstClassPost">Issue Key by First Class Post</option>
+  <option value="issueKeyByFirstClassPost">Issue Key to customer by 1pm spl delivery</option>
+  <option value=""></option>
+</select>
+
+<select id="creditAdjustReason" class="white-field" style="position:absolute; top:113px; left:186px; width:145px; height:26px;">
+  <option value=""></option>
+  <option value="creditAddedInError">Credit Added in Error</option>
+  <option value="creditLostOnKey">Credit Lost on Key</option>
+  <option value="goodwillExgratiaPPNorth">Goodwill Ex Gratia PP North</option>
+  <option value="goodwillExgratiaPPSouth">Goodwill Ex Gratia PP South</option>
+  <option value="creditAdvance">Credit Advance</option>
+  <option value="refund">Refund</option>
+  <option value="dualFuelDiscount">Dual Fuel Discount</option>
+  <option value="creditForCovid19">Credit for Covid 19</option>
+  <option value="affordability">Affordability</option>
+</select>
+
+<input id="tariffSetting" class="white-field" style="position:absolute; top:116px; left:562px; width:33px; height:14px;">
+
+<input id="initKeyCredit" class="white-field" data-money="true" data-money-max="99" style="position:absolute; top:142px; left:186px; width:66px; height:16px;">
+
+<select id="BSLPaymentType" class="white-field" style="position:absolute; top:193px; left:186px; width:145px; height:27px;">
+  
+     <option value="payByCreditDebitCard">Pay By Credit/Debit</option>
+     <option value="payByApplyingChargeToMeter">Pay By Applying Charge to Meter</option>
+     <option value="payAtOutlet">Pay At Outlet</option>
+     <option value=""></option>
+   </select>
+<input id="chargeAmount" class="white-field" data-money="true" data-money-max="10" 
+style="position:absolute; top:223px; left:186px; width:66px; height:16px;">
+<input id="full_Address_Trunc" style="position:absolute; top:250px; left:186px; width:274px; height:16px;">
+
+<input type="checkbox" id="wipeDown" style="position:absolute; top:170px; left:390px;">
+
+<img id="btn-generaterti"
+     class="nav-button"
+     src="../images/buttons/generaterti-inactive.png"
+     data-imgprefix="generaterti"
+     data-mode="dormant"
+     onclick="handleButtonClick(this)"
+     onmouseover="handleRollover(this)"
+     onmouseout="handleRollout(this)"
+     style="position:absolute; top:301px; left:362px; width:104px; height:27px;">
+
+<img id="btn-editaddress"
+     class="nav-button"
+     src="../images/buttons/editaddress-active.png"
+     data-imgprefix="editaddress"
+     data-mode="always"
+     onmouseover="handleRollover(this)"
+     onmouseout="handleRollout(this)"
+     style="position:absolute; top:247px; left:562px; width:104px; height:27px;">
+
+<img id="btn-viewoutlets"
+     class="nav-button"
+     src="../images/buttons/viewoutlets-active.png"
+     data-imgprefix="viewoutlets"
+     data-mode="always"
+     onmouseover="handleRollover(this)"
+     onmouseout="handleRollout(this)"
+     style="position:absolute; top:301px; left:186px; width:104px; height:27px;">

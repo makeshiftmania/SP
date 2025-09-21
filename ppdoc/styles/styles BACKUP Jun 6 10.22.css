@@ -1,0 +1,227 @@
+/* PPDOC Global Field Styling - Match Actual Software */
+
+/* Default input fields - #eaedf0 background (most fields) */
+input, select {
+  background-color: #eaedf0; /* Light grey background for most fields */
+  border: 1px solid #bfbfbf; /* Correct border color */
+  color: black;
+  font-family: "MS Sans Serif", 'Segoe UI', Tahoma, sans-serif;
+  font-size: 13px;
+  padding: 2px;
+ 
+}
+
+/* White background fields - for specific editable fields */
+input.white-field, select.white-field {
+  background-color: white; /* White background for specific fields */
+  border: 1px solid #bfbfbf;
+  color: black;
+}
+
+/* Grey background fields - for read-only/display fields (darker grey) */
+input.grey-field, select.grey-field {
+  background-color: #f0f0f0; /* Darker grey for disabled fields */
+  border: 1px solid #bfbfbf;
+  color: black;
+}
+
+/* Focus styling - blue border for all inputs and dropdowns */
+input:focus, select:focus {
+  outline: none;
+  border-color: #007cbf !important; /* Blue border on focus */
+}
+
+/* Focus styling for white-field class */
+.white-field:focus {
+  border-color: #007cbf !important;
+  outline: none;
+}
+
+/* Focus styling for custom dropdown containers */
+.custom-dropdown:focus-within {
+  border-color: #007cbf !important;
+}
+
+/* Hover styling - keep existing grey */
+input:hover, select:hover {
+  outline: none;
+  border-color: #808080; /* Slightly darker grey on hover */
+}
+
+#container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1608px;
+  height: 768px;
+}
+
+#corebox, #corebox-fields {
+  position: absolute;
+  top: 206px;
+  left: 219px;
+  width: 702px;
+  height: 323px;
+}
+
+#lowerbox, #lowerbox-fields {
+  position: absolute;
+  top: 540px;
+  left: 219px;
+  width: 702px;
+  height: 387px;
+}
+
+#corebox-fields, #lowerbox-fields {
+  z-index: 5;
+  pointer-events: auto;
+}
+
+#corebox, #lowerbox {
+  z-index: 3;
+  pointer-events: none;
+}
+
+#background-fields {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1608px;
+    height: 768px;
+    z-index: 4;
+  }
+
+  .nav-button {
+    position: absolute;
+    z-index: 10; /* Higher than #background-fields (4) and other layers */
+  }
+
+/* Custom Dropdowns - Clean styling to match software */
+.custom-dropdown {
+    position: absolute;
+    font-family: "MS Sans Serif", 'Segoe UI', Tahoma, sans-serif;
+    font-size: 13px;
+    background-color: white; /* Default white for adjustable dropdowns */
+    border: 1px solid #a0a0a0; /* Light grey border */
+    z-index: 11000;
+    cursor: pointer;
+  }
+
+/* Special override for scenario selector - should look like just a button */
+#scenarioSelector {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+#scenarioSelector .selected-option {
+    background-color: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+}
+
+/* Grey dropdown variant - for fixed data dropdowns */
+.custom-dropdown.grey-dropdown {
+    background-color: #f0f0f0; /* Grey background for non-editable */
+    cursor: default;
+  }
+  
+  /* Selected item area */
+  .custom-dropdown .selected-option {
+    padding: 2px 18px 2px 4px; /* Right padding for arrow */
+    height: 20px;
+    line-height: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: black;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 11003;
+  }
+
+  /* Grey dropdown selected option */
+  .custom-dropdown.grey-dropdown .selected-option {
+    cursor: default;
+  }
+  
+  /* Simple dropdown arrow */
+  .custom-dropdown .selected-option::after {
+    content: "▼";
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 8px;
+    color: #606060; /* Grey arrow */
+    pointer-events: none;
+  }
+  
+  /* Dropdown list */
+  .custom-dropdown .dropdown-options {
+    display: none;
+    background-color: white;
+    border: 1px solid #a0a0a0;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    position: absolute;
+    line-height: 18px;
+    padding: 2px;
+    top: 100%;
+    left: 0;
+    width: 100%; /* Match parent width by default */
+    z-index: 10001;
+    min-width: 120px;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  .custom-dropdown .dropdown-options div {
+    padding: 2px 6px;
+    cursor: pointer;
+  }
+  
+  .custom-dropdown .dropdown-options div:hover {
+    background-color: #d0e7f4; /* Updated hover color */
+    color: black; /* Keep text black */
+  }
+
+  /* Tree Menu */
+  #customer-tree {
+    position: absolute;
+    top: 207px;
+    left: 22px;
+    width: 170px;
+    height: 336px;
+    overflow: auto;
+  }
+
+/* Core navigation buttons - clean styling */
+.core-nav-button {
+    background-color: white;
+    border: 1px solid #a0a0a0;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  /* Custom scrollbar styling for uselessWhiteNotes */
+#uselessWhiteNotes-container::-webkit-scrollbar {
+  height: 12px; /* Make horizontal scrollbar smaller */
+}
+
+#uselessWhiteNotes-container::-webkit-scrollbar-track {
+  background: #f0f0f0; /* Light grey track */
+}
+
+#uselessWhiteNotes-container::-webkit-scrollbar-thumb {
+  background: #bfbfbf; /* Grey scrollbar handle */
+  border-radius: 3px;
+}
+
+#uselessWhiteNotes-container::-webkit-scrollbar-thumb:hover {
+  background: #999999; /* Darker on hover */
+}
+
+input {
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-weight: bold;
+}

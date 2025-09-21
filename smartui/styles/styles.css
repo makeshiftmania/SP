@@ -1,0 +1,881 @@
+/* ✅ Active version: styles.css (Updated 18 April 17:10) */
+
+/* General page reset */
+body {
+  margin: 0;
+  padding: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+body.loading {
+  opacity: 0;
+}
+
+body.loaded {
+  opacity: 1;
+}
+
+/* Input fields */
+.input-field {
+  position: absolute;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-weight: bold;
+  font-size: 13px;
+  padding: 2px;
+  background: none;
+  border: none;
+  outline: none;
+  color: black;
+  padding-left: 4px;
+  font-smooth: never;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* UTRN table in historicUTRN turns blue on select */
+.utrn-row.selected {
+  background-color: #c7e0eb !important;
+}
+.utrn-row.selected > div {
+  background-color: #c7e0eb !important;
+  color: black !important;
+}
+
+/* Right-click context menu for HistoricUTRN */
+#context-menu {
+  position: absolute;
+  display: none;
+  background-color: #ffffff;
+  border: 1px solid #a9a9a9;
+  font-family: "MS Sans Serif", 'Segoe UI', Tahoma, sans-serif;
+  font-size: 12px;
+  z-index: 9999;
+  padding: 4px 0;
+  min-width: 160px;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+}
+.context-item {
+  padding: 3px 10px;
+  cursor: default;
+  white-space: nowrap;
+}
+.context-item:hover {
+  background-color: #0a246a;
+  color: white;
+}
+
+/* Find popup box */
+#find-popup {
+  display: none; /* *** ADDED: Hide by default *** */
+  position: fixed; /* *** CHANGED: Use fixed for viewport centering *** */
+  left: 50%;     /* *** ADDED: Center horizontally *** */
+  top: 50%;      /* *** ADDED: Center vertically *** */
+  transform: translate(-50%, -50%); /* *** ADDED: Precise centering adjustment *** */
+  width: 580px;  /* Keep existing dimensions */
+  height: 254px; /* Keep existing dimensions */
+  background: url('../images/findpopup.png') no-repeat;
+  background-size: cover;
+  z-index: 20000;
+  font-family: "MS Sans Serif", 'Segoe UI', Tahoma, sans-serif;
+  font-size: 13px;
+  /* Removed fixed top/left which were overriding centering */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Optional: Added subtle shadow */
+  border: 1px solid #888; /* Optional: Added subtle border */
+}
+
+/* UTRN number in popup */
+#find-popup-utrn {
+  position: absolute;
+  top: 51px;
+  left: 187px;
+  width: 200px;
+  height: 17px;
+  font-family: "MS Sans Serif", 'Segoe UI', Tahoma, sans-serif;
+  font-size: 11px;
+  font-weight: normal;
+  border: none;
+  background: none;
+  color: black;
+  text-align: left;
+  z-index: 20001; /* Ensure input is above background */
+}
+
+/* --- ADDED Rules for Close Buttons --- */
+/* Basic style for all close buttons */
+.popup-close-button {
+    position: absolute; /* Position relative to the #find-popup container */
+    cursor: pointer;
+    z-index: 20002; /* Ensure buttons are on top */
+    /* Optional: Add a semi-transparent background during testing 
+       to see the clickable area */
+    /* background-color: rgba(255, 0, 0, 0.3); */ 
+    /* border: 1px dashed red; */
+}
+
+/* Specific positions for each close button */
+/* !!! ACTION REQUIRED: Adjust top, left, right, bottom, width, height VALUES BELOW 
+       to match the exact locations of the clickable areas on your findpopup.png image !!! */
+#popup-close-x1 {
+    top: 8px;      /* EXAMPLE */
+    right: 8px;     /* EXAMPLE */
+    width: 25px;    /* EXAMPLE - Make it big enough to click */
+    height: 25px;   /* EXAMPLE */
+}
+
+#popup-close-x2 {
+    /* Add position for the second 'X' - where is it on your image? */
+    bottom: 12px;    /* EXAMPLE */
+    right: 15px;     /* EXAMPLE */
+    width: 33px;     /* EXAMPLE */
+    height: 24px;    /* EXAMPLE */
+}
+
+#popup-close-tick {
+     /* Add position for the 'tick' - where is it on your image? */
+    bottom: 12px;    /* EXAMPLE */
+    right: 55px;     /* EXAMPLE */
+    width: 33px;     /* EXAMPLE */
+    height: 24px;    /* EXAMPLE */
+}
+/* --- End Added Rules --- */
+
+
+/* Custom dropdown for UTRN Generate */
+
+.custom-dropdown.dropdown-utrn-generate {
+  width: 306px;
+  height: 26px;
+  z-index: 12005;
+}
+
+.custom-dropdown.dropdown-utrn-generate .selected-option {
+  width: 100%;
+  height: 100%;
+  line-height: 20px;
+  padding: 2px 6px;
+  background-color: transparent;
+  border: 0px;
+  color: black;
+  box-sizing: border-box;
+  z-index: 12004;
+}
+
+.custom-dropdown.dropdown-utrn-generate .dropdown-options {
+  width: 330px;
+}
+
+/* --- ALL YOUR OTHER CUSTOM DROPDOWN STYLES --- */
+/* --- (Keep all existing styles from here down) --- */
+
+.custom-dropdown {
+  position: absolute;
+  font-family: "MS Sans Serif", 'Segoe UI', Tahoma, sans-serif;
+  font-size: 13px;
+  background-color: transparent;
+  border: none;
+  z-index: 11000;
+  cursor: pointer;
+}
+
+/* Selected item area */
+.custom-dropdown .selected-option {
+  padding: 2px 6px;
+  height: 20px;
+  line-height: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: black;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  z-index:11003;
+
+}
+
+
+/* Dropdown list */
+
+.custom-dropdown .dropdown-options {
+  display: none;
+  background-color: white;
+  border: 1px solid #aaa;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  position: absolute;
+  line-height: 18px;
+  padding: 4px 8px;
+  top: 100%;
+  left: -10px; /* slight left shift to keep alignment */
+  width: 330px; /* wider than the top field */
+  z-index: 10001;
+}
+
+.custom-dropdown .dropdown-options div:hover {
+  background-color: #cce6ff;
+}
+
+/* Custom style for the Send Barcode dropdown */
+.custom-dropdown.dropdown-barcode {
+  width: 162px; /* adjust if needed to match your field */
+}
+
+.custom-dropdown.dropdown-barcode .dropdown-options {
+  width: 150px; /* if you want it slightly wider than the box */
+}
+
+/* Custom style for the Replacement Reason PID dropdown */
+.custom-dropdown.dropdown-replacement {
+  width: 190px; /* match your visual layout */
+}
+
+.custom-dropdown.dropdown-replacement .dropdown-options {
+  width: 180px; /* dropdown box slightly wider */
+}
+
+
+
+/* Update PPS DRR Type */
+
+.custom-dropdown.dropdown-drrtype {
+  width: 138px;
+}
+
+.custom-dropdown.dropdown-drrtype .dropdown-options {
+  width: 125px; /* slightly wider if needed */
+}
+
+/* Adjustment type dropdown --> */
+
+.custom-dropdown.dropdown-adjustmenttype {
+  width: 90px; /* or whatever width suits your design */
+}
+
+.custom-dropdown.dropdown-adjustmenttype .dropdown-options {
+  width: 90px; /* slightly wider dropdown if needed */
+  padding: 2px 6px;
+}
+
+
+/* Custom style for the Update PPS Reason dropdown */
+.custom-dropdown.dropdown-reason {
+  width: 336px;      /* 👈 Change this to the desired field width */
+  height: 24px;      /* 👈 Height of the clickable field */
+}
+
+.custom-dropdown.dropdown-reason .selected-option {
+  width: 100%;       /* Make sure it fills the parent */
+  height: 100%;      /* Match the custom-dropdown height */
+  line-height: 24px; /* Vertically align text */
+  padding: 2px 6px;
+  box-sizing: border-box;
+}
+
+.custom-dropdown.dropdown-reason .dropdown-options {
+  width: 310px; /* 👈 Width of dropdown list */
+}
+
+/* Custom style for the Update PPS Adjustment Value dropdown */
+.custom-dropdown.dropdown-adjustmentvalue {
+  width: 150px;    /* 👈 Adjust the field width */
+  height: 24px;    /* 👈 Adjust the clickable field height */
+  z-index: 10000;  /* Keep it on top of other elements */
+
+}
+
+/* Main clickable field styling */
+.custom-dropdown.dropdown-adjustmentvalue .selected-option {
+  width: 100%;
+  height: 100%;
+  line-height: 24px; /* Match height for vertical alignment */
+  padding: 2px 6px;
+  box-sizing: border-box;
+  background: transparent;
+  color: black;
+  cursor: pointer;
+}
+
+/* Dropdown list itself */
+.custom-dropdown.dropdown-adjustmentvalue .dropdown-options {
+  width: 160px;       /* 👈 Can be wider/narrower than the top field */
+  background-color: white;
+  border: 1px solid #aaa;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  line-height: 18px;
+  padding: 4px 8px;
+  top: 100%;
+  left: -5px;
+  z-index: 10001;
+}
+
+/* Hover effect for dropdown options */
+.custom-dropdown.dropdown-adjustmentvalue .dropdown-options div:hover {
+  background-color: #cce6ff;
+}
+
+/* ▼ CUSTOM DROPDOWN: PPS Adjustment Type ▼ */
+.custom-dropdown.dropdown-adjtype {
+  width: 60px;                /* Width of the visible dropdown field */
+  height: 20px;                /* Height of the dropdown (adjust if needed) */
+  font-family: "MS Sans Serif", 'Segoe UI', Tahoma, sans-serif;
+  font-size: 13px;
+  background-color: transparent;
+  border: none;                /* Removes default border – your dashed red border is inline */
+  z-index: 10000;
+  position: absolute;          /* Ensures dropdown stays positioned */
+}
+
+/* The part of the dropdown that shows the selected option */
+.custom-dropdown.dropdown-adjtype .selected-option {
+  padding: 2px 6px;
+  height: 20px;
+  line-height: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: black;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Dropdown menu items (appear when dropdown is open) */
+.custom-dropdown.dropdown-adjtype .dropdown-options {
+  display: none;               /* Hidden until clicked */
+  background-color: white;
+  border: 1px solid #aaa;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  position: absolute;
+  top: 100%;                   /* Positions right below the selected-option */
+  left: -10px;                 /* Shift left slightly for alignment */
+  width: 60px;                /* Can be wider than the field if needed */
+  z-index: 10001;
+  line-height: 18px;
+  padding: 4px 8px;
+}
+
+/* Hover effect for dropdown options */
+.custom-dropdown.dropdown-adjtype .dropdown-options div:hover {
+  background-color: #cce6ff;
+}
+
+
+
+/* Specific fixes for Messages & Incidents category dropdown */
+.custom-dropdown.dropdown-messagesselectcat {
+  width: 180px;               /* 👈 wider field */
+  background-color: #ffffff /* remove grey background */
+}
+
+/* Adjust the selected option */
+.custom-dropdown.dropdown-messagesselectcat .selected-option {
+  width: 100%;
+  height: 24px;
+  line-height: 24px;
+  padding: 2px 6px;
+  background-color: transparent; /* 👈 removes grey */
+  border: none;
+  color: black;
+  box-sizing: border-box;
+}
+
+/* Adjust dropdown options width to match */
+.custom-dropdown.dropdown-messagesselectcat .dropdown-options {
+  width: 180px;
+  background-color: white;   /* dropdown itself can stay white */
+  border: 1px solid #aaa;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  line-height: 18px;
+  padding: 4px 8px;
+  top: 100%;
+  left: -5px;
+  z-index: 10001;
+}
+
+/*
+  Custom Dropdown: #messages_Select_Request_Status
+  Positioned absolutely on the page with legacy styling.
+  Contains a visible selected option and a hidden dropdown menu revealed on interaction.
+*/
+
+#messages_Select_Request_Status {
+  position: absolute;
+  width: 223px; /* Adjust width to fit design */
+  height: 22px;
+  font-family: Tahoma, sans-serif;
+  font-size: 13px;
+  background-color: transparent;
+  border: 0px;
+  box-shadow: inset 0 0 2px #dcdcdc;
+  cursor: pointer;
+  z-index: 10; /* Ensure it's above background */
+}
+
+/* Selected visible part of the dropdown */
+#messages_Select_Request_Status .selected-option {
+  padding: 2px 4px;
+  height: 100%;
+  line-height: 18px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* Dropdown options container – hidden by default */
+#messages_Select_Request_Status .dropdown-options {
+  display: none; /* Set to 'block' via JS when open */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 150px;
+  overflow-y: auto;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  z-index: 20;
+}
+
+/* Each option inside dropdown */
+#messages_Select_Request_Status .dropdown-options div {
+  padding: 4px 6px;
+  font-size: 13px;
+}
+
+/* Hover style for dropdown options */
+#messages_Select_Request_Status .dropdown-options div:hover {
+  background-color: #c7e0eb;
+  cursor: pointer;
+}
+
+/*
+  Custom Dropdown: #messages_Select_Process_Description
+  Positioned absolutely on the page with legacy styling.
+  Contains a visible selected option and a hidden dropdown menu revealed on interaction.
+*/
+
+#messages_Select_Process_Description {
+  position: absolute;
+  width: 223px; /* Same width as matching dropdown */
+  height: 22px;
+  font-family: Tahoma, sans-serif;
+  font-size: 13px;
+  background-color: transparent;
+  border: 0px;
+  box-shadow: inset 0 0 2px #dcdcdc;
+  cursor: pointer;
+  z-index: 10; /* Ensure it's above background */
+}
+
+/* Selected visible part of the dropdown */
+#messages_Select_Process_Description .selected-option {
+  padding: 2px 4px;
+  height: 100%;
+  line-height: 18px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* Dropdown options container – hidden by default */
+#messages_Select_Process_Description .dropdown-options {
+  display: none; /* Set to 'block' via JS when open */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 150px;
+  overflow-y: auto;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  z-index: 20;
+}
+
+/* Each option inside dropdown */
+#messages_Select_Process_Description .dropdown-options div {
+  padding: 4px 6px;
+  font-size: 13px;
+}
+
+/* Hover style for dropdown options */
+#messages_Select_Process_Description .dropdown-options div:hover {
+  background-color: #c7e0eb;
+  cursor: pointer;
+}
+
+/* Specific style for Scenario Selector dropdown */
+#scenario_Selector {
+  font-family: "MS Sans Serif", "Segoe UI", Tahoma, sans-serif;
+  font-size: 12px;
+  padding: 2px;
+  border: none;
+  background-color: transparent;
+  color: black;
+  outline: none;
+  width: 154px;
+  height: 20px;
+  box-sizing: border-box;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* Specific style for Walkthrough Selector dropdown */
+#Smart_Menu_Bar {
+  font-family: "MS Sans Serif", "Segoe UI", Tahoma, sans-serif;
+  font-size: 12px;
+  padding: 2px;
+  border: none;
+  background-color: transparent;
+  color: black;
+  outline: none;
+  width: 154px;
+  height: 20px;
+  box-sizing: border-box;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  z-index: 1000;
+}
+
+.custom-dropdown.dropdown-scenario {
+  width: 154px;
+  height: 20px;
+  z-index: 13002;  /* Increased from default to be above full_address */
+}
+
+.custom-dropdown.dropdown-scenario .selected-option {
+  width: 100%;
+  height: 100%;
+  padding: 2px 6px;
+  line-height: 20px;
+  font-family: "MS Sans Serif", "Segoe UI", Tahoma, sans-serif;
+  font-size: 12px;
+  background-color: transparent;
+  color: black;
+  box-sizing: border-box;
+  z-index: 13002;  /* Added to ensure selected option is also above full_address */
+}
+
+.custom-dropdown.dropdown-scenario .dropdown-options {
+  width: 180px;
+  background-color: white;
+  border: 1px solid #aaa;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 100%;
+  left: -5px;
+  z-index: 13003;  /* Increased to be above both the container and full_address */
+  line-height: 18px;
+  padding: 4px 8px;
+}
+
+.custom-dropdown.dropdown-scenario .dropdown-options div:hover {
+  background-color: #cce6ff;
+}
+
+.custom-dropdown.dropdown-walkthrough {
+  width: 167px;
+  height: 20px;
+  z-index: 12000;
+}
+
+.custom-dropdown.dropdown-walkthrough .selected-option {
+  width: 100%;
+  height: 100%;
+  padding: 2px 6px;
+  line-height: 20px;
+  font-family: "MS Sans Serif", "Segoe UI", Tahoma, sans-serif;
+  font-size: 12px;
+  background-color: transparent;
+  color: black;
+  box-sizing: border-box;
+  z-index: 12000;
+}
+
+.custom-dropdown.dropdown-walkthrough .dropdown-options {
+  width: 185px;
+  background-color: white;
+  border: 1px solid #aaa;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 100%;
+  left: -5px;
+  z-index: 12001;
+  line-height: 18px;
+  padding: 4px 8px;
+}
+
+.custom-dropdown.dropdown-walkthrough .dropdown-options div:hover {
+  background-color: #cce6ff;
+}
+
+/* Custom Dropdown: #readPPS_Display_Latest_Stored_Values */
+
+/* Style for the selected option */
+#readPPS_Display_Latest_Stored_Values .selected-option {
+  padding: 5px;
+  background-color: transparent;
+  border: 0px solid #ccc;
+  cursor: pointer;
+  display: block;
+  width: 175px;
+  font-size: 12px;
+}
+
+/* Style for the dropdown options container */
+#readPPS_Display_Latest_Stored_Values .dropdown-options {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  font-size: 12px;
+  background-color: white;
+  border: 0px solid #ccc;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  z-index: 1001;
+}
+
+/* Style for each option */
+#readPPS_Display_Latest_Stored_Values .dropdown-options div {
+  padding: 5px;
+  cursor: pointer;
+}
+
+/* Change background color when hovering over options */
+#readPPS_Display_Latest_Stored_Values .dropdown-options div:hover {
+  background-color: #ddd;
+}
+
+/* --- Specific Styling for PPS Info Tables --- */
+
+/* Header Styling for ONLY these tables */
+.pps-info-table .table-header {
+  background-color: #e5e5e5; 
+  /* Other header styles */
+}
+
+/* Style for individual cells WITHIN the header for ONLY these tables */
+.pps-info-table .table-header > div {
+   padding: 4px 6px; 
+   font-weight: normal; 
+   border-right: 1px solid #d0d0d0; 
+}
+.pps-info-table .table-header > div:last-child {
+   border-right: none; 
+}
+
+/* Data Row Cell Styling for ONLY these tables */
+/* Targets every <div> immediately inside a .table-row 
+ that is itself inside a .pps-info-table */
+.pps-info-table .table-row > div {
+  background-color: #eaedf0; /* Light background for data cells */
+  border: 1px solid #dddddd; /* Light border around data cells */
+  padding: 4px 6px;          /* Add some padding inside cells */
+  border-top: none;          /* Avoid double borders between rows */
+  border-left: none;   /* Optional: Remove left border if desired */
+  overflow: hidden;          
+  text-overflow: ellipsis;   
+  white-space: nowrap;       
+}
+
+/* Optional: Remove right border from last cell in data rows for these tables */
+.pps-info-table .table-row > div:last-child {
+   border-right: none; 
+}
+/* --- Column text alignment --- */
+
+/* Optional: Explicitly set default alignment for ALL cells 
+   (header and data) in these specific tables */
+   .pps-info-table .table-header > div,
+   .pps-info-table .table-row > div {
+       text-align: left; /* Default is left */
+       /* Adjust padding as needed for visual spacing */
+       padding: 4px 6px; 
+       vertical-align: middle; /* Helps if row heights vary */
+   }
+   
+   /* Right-align the 2nd, 3rd, 4th, and 5th columns 
+      in BOTH the header and the data rows for these specific tables */
+   /* ':nth-child(n+2)' selects the 2nd child and all subsequent siblings */
+   .pps-info-table .table-header > div:nth-child(n+2),
+   .pps-info-table .table-row > div:nth-child(n+2) {
+       text-align: right; 
+   }
+   
+
+   #Diagselect_Select_Device_Type {
+    z-index: 11001;
+  }
+  
+  #Diagselect_Select_Device_Type .dropdown-options {
+    background-color: white;  /* Ensure solid white */
+    z-index: 11002;           /* Above everything else */
+  }
+
+  #Diagselect_Select_Device_Read {
+    z-index: 10998;
+  }
+  
+  #Diagselect_Select_Device_Read .dropdown-options {
+    background-color: white;
+    z-index: 10999;
+  }
+
+  /* Matrix Rain */
+  #background-bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1920px;
+    height: 1215px;
+    background: url('../images/diagnosticsgasdevicebronze.png') no-repeat top left;
+    background-size: cover;
+    z-index: -2;
+  }
+  #matrixCanvas {
+    position: absolute;
+    top: 0px;
+    left: 502px;
+    width: 1410px;
+    height: 1200px;
+    z-index: 1; 
+  
+    pointer-events: none;
+  }
+  #background-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1920px;
+    height: 1215px;
+    background: url('../images/diagnosticsgasdevicebronze2.png') no-repeat top left;
+    background-size: cover;
+    z-index: 2;
+  }
+   /* --- End alignment rules --- */
+/* --- End Specific Styling --- */
+/* ───────────────────────────────────────────
+   Fuel selector  (native <select id="elecOrGas">)
+   ─────────────────────────────────────────── */
+   #elecOrGas {
+    /* absolute overlay coordinates */
+    position: absolute;
+    top: 178px;
+    left: 217px;
+  
+    /* exact box size you measured */
+    width: 168px;
+    height: 25px;
+  
+    /* legacy SmartUI styling */
+    font-family: "MS Sans Serif", "Segoe UI", Tahoma, sans-serif;
+    font-size: 12px;
+    padding: 2px 4px;
+    background-color: transparent;
+    color: black;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+  
+    /* hide native arrow and draw our own */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+ 
+  }
+  
+  /* ⬇️  Uncomment while aligning, then remove */
+  /*
+  #elecOrGas {
+    border: 1px dashed red !important;
+  }
+  */
+
+/* Custom dropdown for Fuel selector */
+.custom-dropdown.dropdown-fuel {
+  position: absolute;
+  top: 181px;
+  left: 217px;
+  width: 168px;
+  height: 26px;
+  z-index: 9999;
+}
+
+.custom-dropdown.dropdown-fuel .selected-option {
+  width: 100%;
+  height: 100%;
+  line-height: 24px;
+  padding: 2px 6px;
+  background-color: transparent;
+  border: none;
+  color: black;
+  box-sizing: border-box;
+}
+
+.custom-dropdown.dropdown-fuel .dropdown-options {
+  width: 180px;
+  background-color: white;
+  border: 1px solid #aaa;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  position: absolute;
+  top: 100%;
+  left: -5px;
+  z-index: 9999;
+  line-height: 18px;
+  padding: 4px 8px;
+  display: none;
+}
+
+.custom-dropdown.dropdown-fuel .dropdown-options.show {
+  display: block;
+}
+
+.custom-dropdown.dropdown-fuel .dropdown-options div:hover {
+  background-color: #cce6ff;
+}
+
+/* ───────────────────────────────────────────
+   Fuel selector: no arrow, no border, transparent
+   ─────────────────────────────────────────── */
+
+/* Native <select> path (standard pages, if you keep that version) */
+#elecOrGas {
+  background: transparent !important;   /* kill grey fill */
+  border: none !important;              /* remove 1-pixel box */
+  appearance: none !important;          /* hide OS arrow */
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  background-image: none !important;    /* just in case */
+}
+
+/* Custom-dropdown path (Bronze / Silver / Gold) */
+.custom-dropdown.dropdown-fuel,
+.custom-dropdown.dropdown-fuel .selected-option {
+  background: transparent !important;   /* clear white fill */
+  border: none !important;              /* kill drop shadow border */
+}
+
+.custom-dropdown.dropdown-fuel .selected-option::after {
+  content: none !important;             /* don't draw CSS arrow sprite */
+}
+
+/* Keep the white pop-up list readable */
+.custom-dropdown.dropdown-fuel .dropdown-options {
+  background: white;                    /* leave list white so text is visible */
+  border: 1px solid #7f7f7f;            /* optional; remove if you want no frame */
+}
+
+/* show the list when JS adds the .show class */
+.custom-dropdown.dropdown-fuel .dropdown-options.show {
+  display: block;
+}
+
+/* override the generic rule – must have !important as well */
+.custom-dropdown.dropdown-fuel .dropdown-options.show {
+  display: block !important;
+}
+
+.underline-field {
+  text-decoration: underline;
+}

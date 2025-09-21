@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<div id="replacementKeyReason" class="custom-dropdown white-field" style="position:absolute; top:2px; left:91px; width:263px; height:26px; z-index: 31;">
+  <div class="selected-option"></div>
+  <div class="dropdown-options">
+    <div data-value=""></div>
+    <div data-value="brokenstolenlost">Broken/Stolen/Lost</div>
+    <div data-value="faultyKey">Faulty Key</div>
+    <div data-value="keyNotReceived">Key Not Received</div>
+  </div>
+</div>
+
+<img id="btn-senddataflow"
+     class="nav-button"
+     src="../images/buttons/senddataflow-inactive.png"
+     data-imgprefix="senddataflow"
+     data-mode="dormant"
+     onclick="handleButtonClick(this)"
+     onmouseover="handleRollover(this)"
+     onmouseout="handleRollout(this)"
+     style="position:absolute; top:1px; left:377px; width:120px; height:27px;">
+
+<!-- Replacement Key BSL Field Overlay -->
+
+<input id="effFromDate" 
+       data-date-picker="true"
+       data-date-format="true" 
+       data-date-picker-group="RepKeyBSLData"
+       data-date-picker-key="lastSent"
+       style="position:absolute; top:115px; left:186px; width:96px; height:16px;">
+
+<input id="meter_Serial" class="white-field" style="position:absolute; top:88px; left:538px; width:98px; height:16px;" readonly>
+<input id="emergencyCredit" class="white-field" data-money="true" data-money-max="30" style="position:absolute; top:142px; left:186px; width:114px; height:16px;">
+<div id="errorCode" class="custom-dropdown white-field" 
+style="position:absolute; top:58px; left:186px; width:55px; height:25px; z-index: 21;">
+  <div class="selected-option" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"></div>
+  <div class="dropdown-options" style="max-height: 215px; overflow-y: auto; width: 260px; font-size: 11px;">
+    <div data-value="meterDatabaseCorrupt">00-Meter database corrupt</div>
+    <div data-value="01faultyMeter">01-Faulty Meter</div>
+    <div data-value="02faultyMeter">02-Faulty Meter</div>
+    <div data-value="03powerSupplyDiode">03-Power supply diode</div>
+    <div data-value="10incorrectMSNOnKey">10-Incorrect MSN on key</div>
+    <div data-value="11corruptKey">11-Corrupt Key</div>
+    <div data-value="12keyPassError">12-Key pass error</div>
+    <div data-value="13noMessage">13-No Message</div>
+    <div data-value="14noMessage">14-No Message</div>
+    <div data-value="15previousKeyAccepted">15-Previous key accepted</div>
+    <div data-value="16noMessage">16-No message</div>
+    <div data-value="20incorrectDataOnKey">20-Incorrect data on key</div>
+    <div data-value="21emgcyCreditNotReqB4KeyIn">21-Emgcy not requested be4 key in</div>
+    <div data-value="22emgcyCreditNotExhB4KeyIn">22-Emgcy not exhausted be4 key in</div>
+    <div data-value="30meterNotAccepted">30-Meter not accepted</div>
+    <div data-value="theInformationInTheMeter">The information in the meter has become</div>
+    <div data-value="A1keyRemovedTooQuickly">A1-Key removed too quickly</div>
+    <div data-value="A10meterKey">A10-Meter key - flat battery/dirty conta</div> 
+    <div data-value="A2dataOnKeyCorrupt">A2-Data on key corrupt</div>
+    <div data-value="A3keyRemovedTooQuickly">A3-Key removed too quickly</div>
+    <div data-value="A4MSNonKeyDifferentToSrl">A4-MSN on key different to Srl No on met</div>
+    <div data-value="A5dataNotTransferedFromKey">A5-Data not transfered from key</div>
+    <div data-value="A6customerUsingOldKey">A6-Customer using old key</div>
+    <div data-value="A7dataNotTransferredFromKey">A7-Data not transferred from key</div> 
+    <div data-value="A8faultyMeterIrrecoverableDataError">A8-Faulty meter / irrecoverable data err</div> 
+    <div data-value="A9theMeterDoesNotRecTheTariff">A9-The meter does not recognise the tari</div>
+    <div data-value="B1keyRemovedTooQuickly">B1-Key removed too quickly</div> 
+    <div data-value="B2dataOnKeyCorrupt">B2-Data on key corrupt</div>
+    <div data-value="B3keyRemovedTooQuickly">B3-Key removed too quickly</div> 
+    <div data-value="B4MSNonKeyDifferentToSrl">B4-MSN on key different to Srl No on met</div>
+    <div data-value="B5dataNotTransferedFromKey">B5-Data not transfered from key</div>
+    <div data-value="B6customerUsingOldKey">B6-Customer using old key</div>
+    <div data-value="B7dataNotTransferredFromKey">B7-Data not transferred from key</div>
+    <div data-value="irrecoverableDataError">Irrecoverable data error</div>
+    <div data-value="theMeterTariffIsInvalid">The meter tariff is invalid. Note t</div>
+    <div data-value="theMeterRateSwitchingDataIsInvalid">The meter rate switching data is invalid</div>
+    <div data-value="communicationsErrorBetweenTheKeyTok">Communications error between the key tok</div>
+    <div data-value="theKeyHasAnInvalidChecksum">The key has an invalid checksum for the</div>
+    <div data-value="thereIsAMismatchBetweenTheSeq">There is a mismatch between the sequence</div>
+    <div data-value="theKeyHasAnIncorrectSerialNo">The key has an incorrect meter serial nu</div>
+    <div data-value="theKeyHasAnInvalidKeypass">The key has an invalid keypass and will</div>
+    <div data-value="theKeyHasPreviouslyBeenUsedWith">The key has previously been used with th</div>
+    <div data-value="theKeyIsInvalidbecauseAProgrammed">The key is invalid because a programmed</div>
+    <div data-value="irrecoverableDataError2">Irrecoverable data error</div>
+    <div data-value="theMeterTariffDataIsInvalid2">The meter tariff data is invalid. Note t</div>
+    <div data-value="theMeterRateSwitchingDataIsInvalid2">The meter rate switching data is invalid</div>
+    <div data-value="memoryReadError">Memory read error</div>
+    <div data-value="memoryWriteError">Memory write error</div>
+    <div data-value="memoryRangeError">Memory range error</div>
+    <div data-value="noTokenDirtyContactsWrongKey">No/Token-Dirty contacts/wrong key MSN pa</div>
+    <div data-value="REDreverseEnergyDetected">RED-Reverse energy detected. Check with</div>
+  </div>
+</div>
+
+<div id="emergencyIndicator" class="custom-dropdown white-field" style="position:absolute; top:85px; left:186px; width:121px; height:25px; z-index: 20;">
+  <div class="selected-option" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"></div>
+  <div class="dropdown-options" style="width: 240px; font-size: 11px;">
+    <div data-value="pickUpKeyAtTheOutlet">Pick Up Key at the Outlet</div>
+    <div data-value="reconfigureExistingKey">Reconfigure Existing Key</div>
+    <div data-value="issueKeyByFirstClassPost">Issue Key by First Class Post</div>
+    <div data-value="issueKeyByFirstClassPost1pm">Issue Key to customer by 1pm spl delivery</div>
+    <div data-value=""></div>
+  </div>
+</div>
+
+<div id="creditAdjustReason" class="custom-dropdown white-field" style="position:absolute; top:112px; left:538px; width:145px; height:27px;">
+  <div class="selected-option" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"></div>
+  <div class="dropdown-options" style="max-height: 160px; overflow-y: auto; width: 170px; font-size: 12px;">
+    <div data-value=""></div>
+    <div data-value="creditAddedToOldKey">Credit Added to Old Key</div>
+    <div data-value="creditAddedInError">Credit Added in Error</div>
+    <div data-value="creditLostOnKey">Credit Lost on Key</div>
+    <div data-value="goodwillExgratiaPPNorth">Goodwill / Ex Gratia PP North</div>
+    <div data-value="goodwillExgratiaPPSouth">Goodwill / Ex Gratia PP South</div>
+    <div data-value="creditAdvance">Credit Advance</div>
+    <div data-value="refund">Refund</div>
+    <div data-value="dualFuelDiscount">Dual Fuel Discount</div>
+    <div data-value="creditForCovid19">Credit for COVID-19</div>
+    <div data-value="affordability">Affordability</div>
+  </div>
+</div>
+
+<input id="tariffSetting" class="grey-field" readonly style="position:absolute; top:61px; left:538px; width:98px; height:16px;">
+
+<input id="initKeyCredit" class="white-field" data-money="true" data-money-max="250" style="position:absolute; top:142px; left:538px; width:98px; height:16px;">
+
+<input id="full_Address_Trunc" class="grey-field" readonly style="position:absolute; top:169px; left:186px; width:274px; height:16px; font-weight: normal !important; font-family: Tahoma, 'Segoe UI', 'MS Sans Serif', sans-serif;">
+
+<input type="checkbox" id="wipeDown" style="position:absolute; top:197px; left:375px;">
+
+<img id="btn-generaterti"
+     class="nav-button"
+     src="../images/buttons/generaterti-inactive.png"
+     data-imgprefix="generaterti"
+     data-mode="dormant"
+     onclick="handleButtonClick(this)"
+     onmouseover="handleRollover(this)"
+     onmouseout="handleRollout(this)"
+     style="position:absolute; top:247px; left:378px; width:104px; height:27px;">
+
+<img id="btn-editaddress"
+     class="nav-button"
+     src="../images/buttons/editaddress-active.png"
+     data-imgprefix="editaddress"
+     data-mode="always"
+     onmouseover="handleRollover(this)"
+     onmouseout="handleRollout(this)"
+     style="position:absolute; top:166px; left:538px; width:104px; height:27px;">
+
+<img id="btn-viewoutlets"
+     class="nav-button"
+     src="../images/buttons/viewoutlets-active.png"
+     data-imgprefix="viewoutlets"
+     data-mode="always"
+     onmouseover="handleRollover(this)"
+     onmouseout="handleRollout(this)"
+     style="position:absolute; top:247px; left:162px; width:104px; height:27px;">

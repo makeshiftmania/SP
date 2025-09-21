@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!-- Core (Customer Info) Fragment -->
+
+    <div id="uselessWhiteNotes-container" class="grey-field" style="position:absolute; top: 23px; left:459px; width:214px; height:188px; border: 1px solid #bfbfbf; overflow-x: scroll; overflow-y: hidden; background-color: #eaedf0; scrollbar-width: thin; scrollbar-color: #bfbfbf #f0f0f0;">
+        <input id="uselessWhiteNotes" style="width: 420px; height: 100%; border: none; background: transparent; outline: none; white-space: nowrap;" readonly>
+    </div>
+    <input id="moveInDate_Offset" style="position:absolute; top: 26px; left:115px; width:82px; height:16px;">
+    <input id="moveOutDate" style="position:absolute; top:26px; left:355px; width:82px; height:16px;">
+    <input id="contract_Start_Offset" alt="Supply Start" style="position:absolute; top:53px; left:115px; width:82px; height:16px;">
+    <input id="contract_End" alt="Supply End" style="position:absolute; top:53px; left:355px; width:82px; height:16px;">
+    <input id="valid_From_Offset" style="position:absolute; top:80px; left:115px; width:82px; height:16px;">
+    <input id="valid_To" style="position:absolute; top:80px; left:355px; width:82px; height:16px;">
+    <input id="ppNo" style="position:absolute; top:107px; left:115px; width:98px; height:16px;">
+    <select id="status" style="position:absolute; top:105px; left:355px; width:89px; height:27px;">
+        <option value=""></option>
+        <option value="Active">Active</option>
+        <option value="Inactive">Inactive</option>
+      </select>
+    <input id="phonenumber" style="position:absolute; top:161px; left:115px; width:121px; height:16px;">
+    <input id="phonenumberLastUpdated" style="position:absolute; top:161px; left:355px; width:82px; height:16px;">
+    <input id="mobile" style="position:absolute; top:188px; left:115px; width:121px; height:16px;">
+    <input id="mobileLastUpdated" style="position:absolute; top:188px; left:355px; width:82px; height:16px;">
+    <input id="email" style="position:absolute; top:215px; left:115px; width:226px; height:16px;">
+    <input id="emailLastUpdated" style="position:absolute; top:215px; left:355px; width:82px; height:16px;"></div>
+
+<!-- Core Menu Buttons -->
+<img id="btn-custinfo"
+     class="nav-button"
+     src="../images/buttons/customerinfo-active.png"
+     data-imgprefix="customerinfo"
+     data-mode="standard"
+     data-fragment="core-customerinfo.html"
+     data-image="core-customerinfo.png"
+     onclick="loadCoreFragment(this)"
+     onmouseover="handleRollover(this)"
+     onmouseout="handleRollout(this)"
+     style="position:absolute; top:1px; left:22px; width:91px; height:20px;">
+
+<img id="btn-debtdrr"
+     class="nav-button"
+     src="../images/buttons/debtdrrinfo-active.png"
+     data-imgprefix="debtdrrinfo"
+     data-mode="standard"
+     data-fragment="core-debtdrrinfo.html"
+     data-image="core-debtdrrinfo.png"
+     onclick="loadCoreFragment(this)"
+     onmouseover="handleRollover(this)"
+     onmouseout="handleRollout(this)"
+     style="position:absolute; top:1px; left:116px; width:91px; height:20px;">
+
+<img id="btn-monitoringinfo"
+     class="nav-button"
+     src="../images/buttons/monitoringinfo-active.png"
+     data-imgprefix="monitoringinfo"
+     data-mode="standard"
+     data-fragment="core-monitoringinfo.html"
+     data-image="core-monitoringinfo.png"
+     onclick="loadCoreFragment(this)"
+     onmouseover="handleRollover(this)"
+     onmouseout="handleRollout(this)"
+     style="position:absolute; top:1px; left:210px; width:94px; height:20px;">
+
+<img id="btn-rtiinfo"
+     class="nav-button"
+     src="../images/buttons/rtiinfo-active.png"
+     data-imgprefix="rtiinfo"
+     data-mode="standard"
+     data-fragment="core-rtiinfo.html"
+     data-image="core-rtiinfo.png"
+     onclick="loadCoreFragment(this)"
+     onmouseover="handleRollover(this)"
+     onmouseout="handleRollout(this)"
+     style="position:absolute; top:1px; left:309px; width:56px; height:20px;">
+
+<img id="btn-debtcreditchecks"
+     class="nav-button"
+     src="../images/buttons/debtcreditchecks-active.png"
+     data-imgprefix="debtcreditchecks"
+     data-mode="standard"
+     data-fragment="core-debtcreditchecks.html"
+     data-image="core-debtcreditchecks.png"
+     onclick="loadCoreFragment(this)"
+     onmouseover="handleRollover(this)"
+     onmouseout="handleRollout(this)"
+     style="position:absolute; top:1px; left:370px; width:116px; height:20px;">
+
+<img id="btn-admindata"
+     class="nav-button"
+     src="../images/buttons/admindata-active.png"
+     data-imgprefix="admindata"
+     data-mode="standard"
+     data-fragment="core-admindata.html"
+     data-image="core-admindata.png"
+     onclick="loadCoreFragment(this)"
+     onmouseover="handleRollover(this)"
+     onmouseout="handleRollout(this)"
+     style="position:absolute; top:1px; left:491px; width:77px; height:20px;">

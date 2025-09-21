@@ -1,0 +1,9 @@
+[ISU-TREE] ISU-tree-menu.js loaded isu-tree-menu.js:2:9
+[ISU-TREE] Debug functions exposed isu-tree-menu.js:496:11
+[ISU-TREE] DOM ready, building tree... isu-tree-menu.js:481:13
+[ISU-TREE] Building tree... isu-tree-menu.js:433:13
+Uncaught ReferenceError: getChildRows is not defined
+    updateVisibility http://localhost:5003/scripts/isu-tree-menu.js:272
+    buildTree http://localhost:5003/scripts/isu-tree-menu.js:469
+    <anonymous> http://localhost:5003/scripts/isu-tree-menu.js:482
+isu-tree-menu.js:272:26

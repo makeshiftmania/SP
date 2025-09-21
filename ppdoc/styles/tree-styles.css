@@ -1,0 +1,136 @@
+/* tree-styles.css — MINIMAL CSS: All positioning controlled by JavaScript */
+
+/*────────────────────────────────────────────────────────────────────────
+CONTAINER SETUP - Controls the scrollable tree area
+────────────────────────────────────────────────────────────────────────*/
+
+/* The main tree container div */
+#customer-tree {
+  /* Size and position of the tree container box */
+  position: absolute;
+  top: 207px;        /* Distance from top of page */
+  left: 22px;        /* Distance from left of page */
+  width: 170px;      /* Total width of tree area */
+  height: 336px;     /* Total height of tree area */
+  
+  /* Scrolling behavior */
+  overflow: auto;    /* Show scrollbars if content is too big */
+  
+ 
+  
+  /* Internal padding (pushes content away from edges) */
+  padding-top: 3px;     /* Space from top edge */
+  padding-left: 5px;    /* Space from left edge */
+  padding-right: 5px;   /* Space from right edge */
+  padding-bottom: 3px;  /* Space from bottom edge */
+}
+
+/* The tree content container */
+#tree-root {
+  /* Reset default list styling */
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  
+  /* Font settings for all tree text */
+  font-family: "Microsoft Sans Serif", sans-serif;
+  font-size: 13px;
+  color: black;
+  
+  /* Make sure positioning works correctly */
+  position: relative;
+}
+
+/* All UL elements inside the tree */
+#tree-root ul {
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* All LI elements inside the tree */
+#tree-root li {
+  display: block;
+  position: relative;
+  padding: 6px 0 !important;
+  margin: 0;
+  white-space: nowrap;
+}
+
+/*────────────────────────────────────────────────────────────────────────
+HOVER AND SELECTION CLASSES - Controlled by JavaScript
+────────────────────────────────────────────────────────────────────────*/
+
+/* Hover effect - lower priority */
+.tree-hover {
+  background-color: #f6f6f6 !important;
+  z-index: 1;
+}
+
+/* Selection effect - highest priority, always wins */
+.tree-selected {
+  background-color: transparent !important; /* Let the overlay handle the color */
+  z-index: 1000;
+}
+
+/* Ensure selection always beats hover */
+.tree-selected.tree-hover {
+  background-color: transparent !important;
+}
+
+/*────────────────────────────────────────────────────────────────────────
+TREE BEHAVIOR - All visual effects handled by JavaScript
+────────────────────────────────────────────────────────────────────────*/
+
+/* Tree rows - basic reset only */
+.tree-row {
+  /* Remove any default styling that might interfere */
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  
+  /* Prevent text selection */
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  
+  /* Smooth transitions for hover/selection effects */
+  transition: background-color 0.1s ease;
+}
+
+/* Tree icons - prevent dragging */
+.tree-icon, .tree-arrow {
+  /* Prevent images from being dragged */
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+  
+  /* Prevent selection */
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/*────────────────────────────────────────────────────────────────────────
+ADJUSTMENT GUIDE
+────────────────────────────────────────────────────────────────────────
+
+To move the entire tree container:
+  - Change #customer-tree top/left values
+
+To change tree container size:
+  - Change #customer-tree width/height values
+
+To change spacing inside the container:
+  - Change #customer-tree padding values
+
+To change fonts:
+  - Change #tree-root font-family/font-size values
+
+All other positioning (indentation, row heights, icon placement, colors) 
+is controlled by the CONFIG object in tree-menu.js - look for the big 
+comment block at the top of that file.
+
+────────────────────────────────────────────────────────────────────────*/

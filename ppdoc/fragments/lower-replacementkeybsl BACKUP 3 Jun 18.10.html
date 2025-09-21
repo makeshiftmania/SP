@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<div id="replacementKeyReason" class="custom-dropdown white-field" style="position:absolute; top:2px; left:91px; width:263px; height:26px;">
+  <div class="selected-option"></div>
+  <div class="dropdown-options">
+    <div data-value=""><!-- Empty option --></div>
+    <div data-value="brokenstolenlost">Broken/Stolen/Lost</div>
+    <div data-value="faultyKey">Faulty Key</div>
+    <div data-value="keyNotReceived">Key Not Received</div>
+  </div>
+</div>
+
+<img id="btn-senddataflow"
+     class="nav-button"
+     src="../images/buttons/senddataflow-inactive.png"
+     data-imgprefix="senddataflow"
+     data-mode="dormant"
+     onclick="handleButtonClick(this)"
+     onmouseover="handleRollover(this)"
+     onmouseout="handleRollout(this)"
+     style="position:absolute; top:1px; left:377px; width:120px; height:27px;">
+
+<!-- Replacement Key BSL Field Overlay -->
+
+<input id="effFromDate" 
+       data-date-picker="true"
+       data-date-format="true" 
+       data-date-picker-group="RepKeyBSLData"
+       data-date-picker-key="lastSent"
+       style="position:absolute; top:61px; left:186px; width:82px; height:16px;">
+
+<input id="meter_Serial" class="white-field" style="position:absolute; top:61px; left:562px; width:97px; height:16px;">
+<input id="ecsEmergencyCreditLimitMeter" class="white-field" data-money="true" data-money-max="30" style="position:absolute; top:89px; left:562px; width:65px; height:16px;">
+
+<div id="emergencyIndicator" class="custom-dropdown white-field" style="position:absolute; top:86px; left:186px; width:145px; height:26px; z-index: 30;">
+  <div class="selected-option"></div>
+  <div class="dropdown-options" style="width: 240px; font-size: 12px;">
+    <div data-value="pickUpKeyAtTheOutlet">Pick Up Key at the Outlet</div>
+    <div data-value="issueKeyByFirstClassPost">Issue Key by First Class Post</div>
+    <div data-value="issueKeyByFirstClassPost">Issue Key to customer by 1pm spl delivery</div>
+    <div data-value=""><!-- Empty option --></div>
+  </div>
+</div>
+
+<div id="creditAdjustReason" class="custom-dropdown white-field" style="position:absolute; top:113px; left:186px; width:145px; height:26px; z-index: 25; font-size: 12px;">
+  <div class="selected-option"></div>
+  <div class="dropdown-options" style="width: 170px; font-size: 12px;">
+    <div data-value=""><!-- Empty option --></div>
+    <div data-value="creditAddedInError">Credit Added in Error</div>
+    <div data-value="creditLostOnKey">Credit Lost on Key</div>
+    <div data-value="goodwillExgratiaPPNorth">Goodwill Ex Gratia PP North</div>
+    <div data-value="goodwillExgratiaPPSouth">Goodwill Ex Gratia PP South</div>
+    <div data-value="creditAdvance">Credit Advance</div>
+    <div data-value="refund">Refund</div>
+    <div data-value="dualFuelDiscount">Dual Fuel Discount</div>
+    <div data-value="creditForCovid19">Credit for Covid 19</div>
+    <div data-value="affordability">Affordability</div>
+  </div>
+</div>
+
+<input id="tariffSetting" style="position:absolute; top:116px; left:562px; width:33px; height:14px;">
+
+<input id="initKeyCredit" class="white-field" data-money="true" data-money-max="99" style="position:absolute; top:142px; left:186px; width:66px; height:16px;">
+
+<div id="BSLPaymentType" class="custom-dropdown white-field" style="position:absolute; top:193px; left:186px; width:145px; height:27px; z-index: 20;">
+  <div class="selected-option"></div>
+  <div class="dropdown-options" style="width: 190px; font-size: 12px;">
+    <div data-value="payByCreditDebitCard">Pay By Credit/Debit</div>
+    <div data-value="payByApplyingChargeToMeter">Pay By Applying Charge to Meter</div>
+    <div data-value="payAtOutlet">Pay At Outlet</div>
+    <div data-value=""><!-- Empty option --></div>
+  </div>
+</div>
+
+<input id="chargeAmount" data-money="true" data-money-max="10" 
+style="position:absolute; top:223px; left:186px; width:66px; height:16px;">
+<input id="full_Address_Trunc" style="position:absolute; top:250px; left:186px; width:274px; height:16px;">
+
+<input type="checkbox" id="wipeDown" style="position:absolute; top:170px; left:390px;">
+
+<img id="btn-generaterti"
+     class="nav-button"
+     src="../images/buttons/generaterti-inactive.png"
+     data-imgprefix="generaterti"
+     data-mode="dormant"
+     onclick="handleButtonClick(this)"
+     onmouseover="handleRollover(this)"
+     onmouseout="handleRollout(this)"
+     style="position:absolute; top:301px; left:362px; width:104px; height:27px;">
+
+<img id="btn-editaddress"
+     class="nav-button"
+     src="../images/buttons/editaddress-active.png"
+     data-imgprefix="editaddress"
+     data-mode="always"
+     onmouseover="handleRollover(this)"
+     onmouseout="handleRollout(this)"
+     style="position:absolute; top:247px; left:562px; width:104px; height:27px;">
+
+<img id="btn-viewoutlets"
+     class="nav-button"
+     src="../images/buttons/viewoutlets-active.png"
+     data-imgprefix="viewoutlets"
+     data-mode="always"
+     onmouseover="handleRollover(this)"
+     onmouseout="handleRollout(this)"
+     style="position:absolute; top:301px; left:186px; width:104px; height:27px;">
